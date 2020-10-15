@@ -28,8 +28,8 @@ body {
   .wave img {
     border: 5px solid #f8f8f8;
     display: block;
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
   }
   
   .wave figcaption {
@@ -67,6 +67,10 @@ body {
   @keyframes wave {
     0% { transform: rotate(3deg); }
     100% { transform: rotate(-3deg); }
+  }
+
+  .img{
+        background-size: 0%;
   }
   
   
