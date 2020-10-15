@@ -69,8 +69,10 @@ body {
     100% { transform: rotate(-3deg); }
   }
 
-  .img{
-        background-size: 0%;
-  }
+.imgdiv{
+    border: 5px solid #f8f8f8;
+    display: block;
+    width: 250px;
+}
   
   
