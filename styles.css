@@ -180,3 +180,8 @@ body {
   .navbar {
     overflow: hidden
   }
+
+  #cardButton{
+    background-color: white; 
+    color: black;
+  }
