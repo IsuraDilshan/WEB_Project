@@ -7,6 +7,8 @@
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" type="text/css" href="styles.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script language="javascript" type="text/javascript" src="22.09.2020.js"></script>
+    
 </head>
 <body>
     <!--Top div here-->
@@ -26,6 +28,35 @@
 
     
     <!--photo or slid show here-->
+    <center>
+        <div class="container" style="width: 800px; margin-top: 100px;">
+            <div id="slides">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/139719/example-slide-1.jpg">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/139719/example-slide-2.jpg">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/139719/example-slide-3.jpg">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/139719/example-slide-4.jpg">
+              <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+              <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+            </div>
+        </div>
+    </center>
+          <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+          <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/139719/jquery.slides.min.js"></script>
+          <script>
+            $(function() {
+              $('#slides').slidesjs({
+                width: 940,
+                height: 528,
+                navigation: false,
+                play: { auto: true,interval: 3000, },
+            effect: {
+              slide: {speed: 1500},
+              fade: { speed: 300, },
+                    }
+              });
+            });
+          </script>
+
     <!--Description here for aboue place-->
     <br><br>
     <!--Other places here-->
