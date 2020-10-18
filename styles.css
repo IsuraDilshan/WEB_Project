@@ -12,6 +12,10 @@ body {
     align-items: center;
     padding:10px;
     font-family: 'Roboto Mono', monospace;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    
   }
   
   .wave {
@@ -186,3 +190,21 @@ body {
     background-color: white; 
     color: black;
   }
+
+iframe{
+	display: block;
+	float: right;
+	width: 450px;
+	height: 450px;
+	
+}
+#map{
+	position: absolute;
+	right: 0;
+}
+
+.name{
+  font-size: 100px;
+  color: white;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
