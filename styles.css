@@ -12,6 +12,10 @@ body {
     align-items: center;
     padding:10px;
     font-family: 'Roboto Mono', monospace;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    
   }
   
   .wave {
@@ -19,6 +23,7 @@ body {
     margin: 20px;
     animation: wave  ease-in-out 0.5s infinite alternate;
     transform-origin: center -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .wave:hover {
@@ -180,3 +185,26 @@ body {
   .navbar {
     overflow: hidden
   }
+
+  #cardButtonc{
+    background-color: white; 
+    color: black;
+  }
+
+iframe{
+	display: block;
+	float: right;
+	width: 450px;
+	height: 450px;
+	
+}
+#map{
+	position: absolute;
+	right: 0;
+}
+
+.name{
+  font-size: 100px;
+  color: white;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
