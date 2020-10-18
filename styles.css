@@ -19,6 +19,7 @@ body {
     margin: 20px;
     animation: wave  ease-in-out 0.5s infinite alternate;
     transform-origin: center -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .wave:hover {
@@ -181,7 +182,7 @@ body {
     overflow: hidden
   }
 
-  #cardButton{
+  #cardButtonc{
     background-color: white; 
     color: black;
   }
