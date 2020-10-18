@@ -4,44 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NuwaraEliya</title>
+    <title>Kandy</title>
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script language="javascript" type="text/javascript" src="22.09.2020.js"></script>
+
 </head>
 
-<body>
-    <!--Top img bar here-->
-    <img src="top.png" width="100%"><br>
+<body style="background-image: url('waterfalls2.jpg'); backdrop-filter: blur(5px);">
 
-    <!--WebSite main logo here-->
-    <img src="images/logo" class="logo" alt="Logo">
+    <!--NavBar here-->
 
-    <!--Distric name here-->
+    <!--Distric Name here-->
+    <center>
+        <h1 class="name">NUWARAELIYA</h1>
+    </center>
+
     <!--photo or slid show here-->
+    <center>
+        <div class="container" style="width: 1000px; margin-top: 100px;">
+            <div id="slides">
+                <img src="hakgala4.jpg">
+                <img src="hakgala.jpg">
+                <img src="hakgala1.jpg">
+                <img src="hakgala2.jpg">
+                <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+                <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+            </div>
+        </div>
+    </center>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/139719/jquery.slides.min.js"></script>
+    <script>
+        $(function() {
+            $('#slides').slidesjs({
+                width: 940,
+                height: 528,
+                navigation: false,
+                play: {
+                    auto: true,
+                    interval: 3000,
+                },
+                effect: {
+                    slide: {
+                        speed: 1500
+                    },
+                    fade: {
+                        speed: 300,
+                    },
+                }
+            });
+        });
+    </script>
+    <br><br>
     <!--Description here for aboue place-->
+    <div class="card" style="width: 80%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: rgba(255, 255, 255, 0.8);">
+        <div class="card-body" style="width: 50%; position:relative;">
+            <h5 class="card-title">Hakgala Botanical Garden</h5>
+            <p class="card-text">Hakgala Botanical Garden is the second largest garden among the five botanical gardens in Sri Lanka and is contiguous to Hakgala Strict Nature Reserve, which is the home to a variety of wild life, including bears, monkeys and birds. Situated
+                some 10 kilometres South of Nuwara Eliya. The main sections of the garden are the rock garden, water garden, fern garden, Japanese garden and the seed room. Hakgala is a temperate hill-country garden, where the lovely low-country lotus
+                and water lily mingles in their serene simplicity with sophisticated English roses, pre-historic looking ferns, and endemic orchids.</p>
+            <a href="https://en.wikipedia.org/wiki/Hakgala_Botanical_Garden" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+        </div>
+
+        <div id="map">
+            <iframe al src="https://www.google.lk/maps/place/Hakgala+Botanical+Gardens/@6.9265849,80.8193397,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae47f4e2989ad8f:0xd9ed0d9523eaca78!8m2!3d6.9265849!4d80.8215284?hl=en-GB"></iframe>
+        </div>
+    </div>
+
+
     <br><br>
     <!--Other places here-->
     <div style="margin-top: 20px;">
 
         <figure class="wave">
-            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1602040491414/RKBo8jy-u.jpeg" alt="rajni"></img>
-            <figcaption>Polgolla Dam</figcaption>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="piduruthalagala.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Piduruthalagala</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
         </figure>
 
         <figure class="wave">
-            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1602040470953/tCodF_LJ9.png" alt="chuck"></img>
-            <figcaption>Hanthana</figcaption>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="gregory.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Lake Gregory</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
         </figure>
 
         <figure class="wave">
-            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1602040482117/DU28C3ZZ1.png" alt="chan"></img>
-            <figcaption>Hindagala Temple</figcaption>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="waterfalls1.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Bomburuella Waterfall</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
         </figure>
 
         <figure class="wave">
-            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1602040456162/jUM3UTpdS.png" alt="bean"></img>
-            <figcaption>Degaldoruwa Temple</figcaption>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="kirigalpoththa1.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Kirigalpoththa Mountain</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="wave">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="victoriadam.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Victoria Dam</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="wave">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="ambewela.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Ambewela Farm</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="wave">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="moonplains.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Moon Plains</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="wave">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="victoria.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Victoria Park</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="wave">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="kotmaledam.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Kotmale Dam</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="wave">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="golf.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Golf Club, Nuwaraeliya</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
+        </figure>
+
+        <figure class="wave">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="labookale.jpg" style="width: 18rem; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Damro Labookallie Tea Loung</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+                </div>
+            </div>
         </figure>
 
     </div>
