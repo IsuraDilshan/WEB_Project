@@ -5,9 +5,9 @@ if(count($_POST)>0) {
 	$result = mysqli_query($conn,"SELECT * FROM admin WHERE username='" . $_POST["userName"] . "' and password = '". $_POST["password"]."'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
-		$message = "Invalid Username or Password!";
+		echo '<script>alert("Wrong Usarname or Password")</script>';
 	} else {
-		$message = "You are successfully authenticated!";
+		header("Location: dashboard.php");
 	}
 }
 ?>
