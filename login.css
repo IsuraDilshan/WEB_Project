@@ -1,58 +1,56 @@
 body{
-    background-image: url("All\ Logos/113.jpg");
-    background-size: 100%;
+    font-family: calibri;
+    background-image: url("113.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: 100%;
 }
-
-#outerDiv{
-    height: 290px;
-    width: 600px;
-    background-color: rgba(255, 255, 255, 0.6);
+.tblLogin {
+	border:0px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
     margin-top: 310px;
-    border-radius: 20px;
+}
+.tableheader {
+    font-size: 24px;
+}
+.tableheader td {
+    padding: 20px;
+}
+.tablerow td{
+	text-align:center;
+}
+.message {
+color: #FF0000;
+font-weight: bold;
+text-align: center;
+width: 100%;
+}
+.login-input {
+	border: #CCC 1px solid;
+    padding: 10px 20px;
+}
+.btnSubmit {
+	padding: 10px 20px;
+    background:aqua;
+    border: 0px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
 }
 #bDiv{
-    width: 600px;
+    border:0px;
+    background: rgba(255,255,255,0.6);
+    width: 450px;
     height: 90px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    margin-top: 15px;
-}
-
-#text{
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    align-items: center;
-}
-
-#button{
-    width: 410px;
-    height: 50px;
-    background-color: aqua;
-    font-size: 30px;
-    font-weight: 600;
-    border: 0px;
     border-radius: 10px;
 }
-
 .btn{
-    width: 150px;
-    height: 50px;
-    background-color: aqua;
-    font-size: 20px;
-    font-weight: 600;
+    padding: 10px 20px;
+    background:aqua;
     border: 0px;
-    border-radius: 10px;
-    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
 }
-
 #lbl{
- font-size: 20px;
- margin-top: 10px;
- padding-top: 10px;
- font-weight: 900;
+    font-size: 20px;
+    font-weight: 400;
 }
