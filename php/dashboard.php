@@ -54,6 +54,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 .b2{
     border: 1px solid black;
 }
+#logout{
+    float: right;
+    background-color:  rgb(0, 81, 255);
+    color: white;
+    border: 0px;
+}
+#logout:hover{
+    background-color: aquamarine;
+    color: black;
+    border: 0px;
+}
 </style>
 
 </head>
@@ -61,6 +72,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
 
 <div id="top">
+    <button id="logout" onclick="document.location='logout.php'">LogOut</button>
 <center>
     <h2>Trapo Tour Dashboard</h2>
 
