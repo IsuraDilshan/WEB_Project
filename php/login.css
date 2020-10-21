@@ -1,6 +1,6 @@
 body{
     font-family: calibri;
-    background-image: url('All Logos/ALL Set Logos/113.png');
+    background-image: url('113.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -31,26 +31,31 @@ width: 100%;
 }
 .btnSubmit {
 	padding: 10px 20px;
-    background:aqua;
+    background:#4A4B8C;
     border: 0px;
-    color: rgb(0, 0, 0);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
     border-radius: 5px;
 }
 #bDiv{
     border:0px;
     background: rgba(255,255,255,0.6);
-    width: 450px;
+    width: 500px;
     height: 90px;
     border-radius: 10px;
 }
 .btn{
     padding: 10px 20px;
-    background:aqua;
+    background: #4A4B8C;
     border: 0px;
-    color: rgb(0, 0, 0);
+    color:white;
+    font-size: 18px;
+    font-weight: 500;
     border-radius: 5px;
 }
 #lbl{
     font-size: 20px;
     font-weight: 400;
 }
+

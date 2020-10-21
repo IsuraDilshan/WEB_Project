@@ -12,7 +12,7 @@ if(count($_POST)>0) {
 		$retval = mysql_query( $result, $conn );
 		
 		while($row = mysql_fetch_assoc($retval)) {
-			$userType = {$row['usertype']};
+			$userType = $row['usertype'];
    		}
    
 		if($userType=="T"){
