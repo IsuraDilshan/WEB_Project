@@ -1,3 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: dashboard_login.php");
+    exit;
+}
+?>
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,11 +35,13 @@
     background-color: rgb(0, 81, 255);
     color: white;
     font-size: 20px;
+    border: 0px;
 }
 .btn:hover{
     background-color: aquamarine;
     color: black;
 }
+
 .table{
     border: 2px solid black;
 }
@@ -51,12 +64,12 @@
 <center>
     <h2>Trapo Tour Dashboard</h2>
 
-<button onclick="message()" class="btn">Messages</button>
-<button onclick="tourist()" class="btn">Tourists</button>
-<button onclick="guides()" class="btn">Guides</button>
-<button onclick="drivers()" class="btn">Drivers</button>
-<button onclick="gbk()" class="btn">Guide Bookings</button>
-<button onclick="dbk()" class="btn">Driver Bookings</button>
+<button onclick="message()" class="btn" id="m">Messages</button>
+<button onclick="tourist()" class="btn" id="t">Tourists</button>
+<button onclick="guides()" class="btn" id="g">Guides</button>
+<button onclick="drivers()" class="btn" id="d">Drivers</button>
+<button onclick="gbk()" class="btn" id="gbb">Guide Bookings</button>
+<button onclick="dbk()" class="btn" id="dbb">Driver Bookings</button>
 
 </center>
 </div>
@@ -172,53 +185,73 @@ gb.style.display = "none";
 var db = document.getElementById("db");
 db.style.display = "none";
 
+function resetColor(){
+    document.getElementById("m").style.backgroundColor="rgb(0, 81, 255)";
+    document.getElementById("t").style.backgroundColor="rgb(0, 81, 255)";
+    document.getElementById("g").style.backgroundColor="rgb(0, 81, 255)";
+    document.getElementById("d").style.backgroundColor="rgb(0, 81, 255)";
+    document.getElementById("gbb").style.backgroundColor="rgb(0, 81, 255)";
+    document.getElementById("dbb").style.backgroundColor="rgb(0, 81, 255)"; 
+}
 function message() {
+    resetColor();
     m.style.display = "block";
     t.style.display = "none";
     g.style.display = "none";
     d.style.display = "none";
     gb.style.display = "none";
     db.style.display = "none";
+    document.getElementById("m").style.backgroundColor="rgb(213, 123, 255)";
 }
 function tourist() {
+    resetColor();
     m.style.display = "none";
     t.style.display = "block";
     g.style.display = "none";
     d.style.display = "none";
     gb.style.display = "none";
     db.style.display = "none";
+    document.getElementById("t").style.backgroundColor="rgb(213, 123, 255)";
 }
 function guides() {
+    resetColor();
     m.style.display = "none";
     t.style.display = "none";
     g.style.display = "block";
     d.style.display = "none";
     gb.style.display = "none";
     db.style.display = "none";
+    document.getElementById("g").style.backgroundColor="rgb(213, 123, 255)";
 }
 function drivers() {
+    resetColor();
     m.style.display = "none";
     t.style.display = "none";
     g.style.display = "none";
     d.style.display = "block";
     gb.style.display = "none";
     db.style.display = "none";
+    document.getElementById("d").style.backgroundColor="rgb(213, 123, 255)";
 }
 function gbk() {
+    resetColor();
     m.style.display = "none";
     t.style.display = "none";
     g.style.display = "none";
     d.style.display = "none";
     gb.style.display = "block";
     db.style.display = "none";
+    document.getElementById("gbb").style.backgroundColor="rgb(213, 123, 255)";
 }
 function dbk() {
+    resetColor();
     m.style.display = "none";
     t.style.display = "none";
     g.style.display = "none";
     d.style.display = "none";
     gb.style.display = "none";
     db.style.display = "block";
+    document.getElementById("dbb").style.backgroundColor="rgb(213, 123, 255)";
 }
 
 </script>
