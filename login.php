@@ -29,7 +29,7 @@ if(count($_POST)>0) {
 ?>
 <html>
 <head>
-<title>User Login</title>
+<title>Login</title>
 <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
@@ -37,7 +37,7 @@ if(count($_POST)>0) {
 	<div class="message"><?php if($message!="") { echo $message; } ?></div>
 		<table border="0" cellpadding="10" cellspacing="1" width="500" align="center" class="tblLogin">
 			<tr class="tableheader">
-			<td align="center" colspan="2">Enter Login Details</td>
+			<td align="center" colspan="2">Login</td>
 			</tr>
 			<tr class="tablerow">
 			<td>
