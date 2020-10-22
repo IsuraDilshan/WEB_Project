@@ -8,10 +8,11 @@ if(count($_POST)>0) {
 	$sql = "INSERT INTO messages (name, email, mobile, message) VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["msg"] . "')";
 
 	if ($conn->query($sql) === TRUE) {
-		echo '<script>alert("New record created successfully")</script>';
-	  } else {
+		echo '<script>alert("Thank you! We\'ll reply you as soon as possible")</script>';
+		} 
+		else {
 		echo '<script>alert("Something went wrong")</script>';
-	  }
+	  	}
 	  
 	  $conn->close();
 }
