@@ -155,21 +155,247 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             }
             ?>
         </table>
+    </div>
 </div>
 
 <!--Tourist Tab-->
 <div id="tourist">
-t
+    <div>
+        <table class="table" width="100%" cellspacing="0">
+            <thead class="hnf">
+                <tr>
+                    <th class="b2">ID</th>
+                    <th class="b2">First Name</th>
+                    <th class="b2">Last Name</th>
+                    <th class="b2">Gender</th>
+                    <th class="b2">Email</th>
+                    <th class="b2">Mobile</th>
+                    <th class="b2">Country</th>
+                </tr>
+            </thead>
+            <tfoot class="hnf">
+                <tr>
+                    <th class="b2">ID</th>
+                    <th class="b2">First Name</th>
+                    <th class="b2">Last Name</th>
+                    <th class="b2">Gender</th>
+                    <th class="b2">Email</th>
+                    <th class="b2">Mobile</th>
+                    <th class="b2">Country</th>
+                </tr>
+            </tfoot>
+                <?php
+                $servername = "localhost";
+                $username = "id15181466_trapotourdb";
+                $password = "NSBMply20.1SE";
+                $dbname = "id15181466_trapotourdatabase";
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = 'SELECT * from user where usertype = "T"';
+                if (mysqli_query($conn, $sql)) {
+                echo "";
+                } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                $count=1;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) { ?>
+            <tbody>
+                <tr>
+                    <th class="b1">
+                        <?php echo $row['userID']; ?>
+                    </th>
+                    <td class="b1">
+                        <?php echo $row['firstName']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['lastName']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['gender']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['email']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['mobile']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['country']; ?>
+                    </td>
+                </tr>
+            </tbody>
+            <?php
+            $count++;
+            }
+            } else {
+            echo '0 results';
+            }
+            ?>
+        </table>
+    </div>
 </div>
 
 <!--Guides Tab-->
 <div id="guides">
-g
+    <div>
+        <table class="table" width="100%" cellspacing="0">
+            <thead class="hnf">
+                <tr>
+                    <th class="b2">ID</th>
+                    <th class="b2">First Name</th>
+                    <th class="b2">Last Name</th>
+                    <th class="b2">Gender</th>
+                    <th class="b2">Email</th>
+                    <th class="b2">Mobile</th>
+                    <th class="b2">City</th>
+                </tr>
+            </thead>
+            <tfoot class="hnf">
+                <tr>
+                    <th class="b2">ID</th>
+                    <th class="b2">First Name</th>
+                    <th class="b2">Last Name</th>
+                    <th class="b2">Gender</th>
+                    <th class="b2">Email</th>
+                    <th class="b2">Mobile</th>
+                    <th class="b2">City</th>
+                </tr>
+            </tfoot>
+                <?php
+                $servername = "localhost";
+                $username = "id15181466_trapotourdb";
+                $password = "NSBMply20.1SE";
+                $dbname = "id15181466_trapotourdatabase";
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = 'SELECT * from user where usertype = "G"';
+                if (mysqli_query($conn, $sql)) {
+                echo "";
+                } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                $count=1;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) { ?>
+            <tbody>
+                <tr>
+                    <th class="b1">
+                        <?php echo $row['userID']; ?>
+                    </th>
+                    <td class="b1">
+                        <?php echo $row['firstName']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['lastName']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['gender']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['email']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['mobile']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['city']; ?>
+                    </td>
+                </tr>
+            </tbody>
+            <?php
+            $count++;
+            }
+            } else {
+            echo '0 results';
+            }
+            ?>
+        </table>
+    </div>
 </div>
 
 <!--Drivers Tab-->
 <div id="drivers">
-d
+    <div>
+        <table class="table" width="100%" cellspacing="0">
+            <thead class="hnf">
+                <tr>
+                    <th class="b2">ID</th>
+                    <th class="b2">First Name</th>
+                    <th class="b2">Last Name</th>
+                    <th class="b2">Gender</th>
+                    <th class="b2">Email</th>
+                    <th class="b2">Mobile</th>
+                    <th class="b2">City</th>
+                </tr>
+            </thead>
+            <tfoot class="hnf">
+                <tr>
+                    <th class="b2">ID</th>
+                    <th class="b2">First Name</th>
+                    <th class="b2">Last Name</th>
+                    <th class="b2">Gender</th>
+                    <th class="b2">Email</th>
+                    <th class="b2">Mobile</th>
+                    <th class="b2">City</th>
+                </tr>
+            </tfoot>
+                <?php
+                $servername = "localhost";
+                $username = "id15181466_trapotourdb";
+                $password = "NSBMply20.1SE";
+                $dbname = "id15181466_trapotourdatabase";
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = 'SELECT * from user where usertype = "D"';
+                if (mysqli_query($conn, $sql)) {
+                echo "";
+                } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                $count=1;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) { ?>
+            <tbody>
+                <tr>
+                    <th class="b1">
+                        <?php echo $row['userID']; ?>
+                    </th>
+                    <td class="b1">
+                        <?php echo $row['firstName']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['lastName']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['gender']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['email']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['mobile']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['city']; ?>
+                    </td>
+                </tr>
+            </tbody>
+            <?php
+            $count++;
+            }
+            } else {
+            echo '0 results';
+            }
+            ?>
+        </table>
+    </div>
 </div>
 
 <!--Guide Bookings-->
