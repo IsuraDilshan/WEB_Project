@@ -2,7 +2,7 @@
 $message="";
 if(count($_POST)>0) {
 	$conn = mysqli_connect("localhost","id15181466_trapotourdb","NSBMply20.1SE","id15181466_trapotourdatabase");
-	$result = mysqli_query($conn,"SELECT usertype FROM users WHERE username='" . $_POST["userName"] . "' and password = '". $_POST["password"]."'");
+	$result = mysqli_query($conn,"SELECT * FROM admin WHERE username='" . $_POST["userName"] . "' and password = '". $_POST["password"]."'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
 		echo '<script>alert("Wrong Usarname or Password")</script>';
