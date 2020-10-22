@@ -8,9 +8,9 @@ if(count($_POST)>0) {
 	$sql = "INSERT INTO messages (name, email, mobile, message) VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["msg"] . "')";
 
 	if ($conn->query($sql) === TRUE) {
-		echo "New record created successfully";
+		echo '<script>alert("New record created successfully")</script>';
 	  } else {
-		echo "Error: " . $sql . "<br>" . $conn->error;
+		echo '<script>alert("Something went wrong")</script>';
 	  }
 	  
 	  $conn->close();
@@ -43,7 +43,7 @@ body {
 	font-size: 12px;
 	line-height:30px;
 	color:#777;
-	background-image: url('All Logos/ALL Set Logos/113.png');
+	background-image: url('113.png');
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 200px;
@@ -160,13 +160,12 @@ fieldset {
             <input name="mobile" placeholder="Your Phone Number" type="tel" tabindex="3" required>
           </fieldset>
           <fieldset>
-            <textarea name="msg" placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            <textarea name="msg" placeholder="Type your Message Here.... (500 Characters only)" tabindex="5" required></textarea>
 		  </fieldset>
-			<lable>500 Characters only</lable>
           <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
           </fieldset>
         </form>
-      </div>
+    </div>
 </body>
 </html>
