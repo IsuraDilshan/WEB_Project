@@ -5,12 +5,13 @@ if(count($_POST)>0) {
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 	}
-	$sql = "INSERT INTO messages (name, email, mobile, message) VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["msg"] . "')";
+	$sql = "INSERT INTO user (usertype, image, firstName, lastName, username, password, gender, email, mobile, country) VALUES ('T','" . $_POST["image"] . "','" . $_POST["fname"] . "','" . $_POST["lname"] . "','" . $_POST["username"] . "','" . $_POST["password"] . "','" . $_POST["gender"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["country"] . "')";
 
 	if ($conn->query($sql) === TRUE) {
 		echo '<script>alert("New record created successfully")</script>';
-	  } else {
-		echo '<script>alert("Something went wrong")</script>';
+    } 
+    else {
+		echo '<script>alert("Username already use or Something went wrong")</script>';
 	  }
 	  
 	  $conn->close();
@@ -53,7 +54,8 @@ body {
 	max-width:400px;
 	width:100%;
 	margin:0 auto;
-	position:relative;
+  position:relative;
+  margin-top: -150px;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
@@ -162,26 +164,26 @@ fieldset {
             <input name="fname" placeholder="First Name" type="text" tabindex="1" required autofocus>
           </fieldset>
           <fieldset>
-            <input name="lname" placeholder="Last Name" type="text" tabindex="1" required autofocus>
+            <input name="lname" placeholder="Last Name" type="text" tabindex="2" required autofocus>
           </fieldset>
           <fieldset>
-            <input name="username" placeholder="Username" type="text" tabindex="1" required autofocus>
+            <input name="username" placeholder="Username" type="text" tabindex="3" required autofocus>
           </fieldset>
           <fieldset>
-            <input name="password" placeholder="   Password" type="password" tabindex="1" required autofocus class="hold">
+            <input name="password" placeholder="   Password" type="password" tabindex="4" required autofocus class="hold">
           </fieldset>
             <lable>M</lable>
-            <input type="radio" name="gender" value="M" tabindex="1" required ></fieldset>
+            <input type="radio" name="gender" value="M" tabindex="5" required ></fieldset>
             <lable>F</lable>
-            <input type="radio" name="gender" value="F" tabindex="1" required ></fieldset>
+            <input type="radio" name="gender" value="F" tabindex="6" required ></fieldset>
           <fieldset>
-            <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+            <input name="email" placeholder="Your Email Address" type="email" tabindex="7" required>
           </fieldset>
           <fieldset>
-            <input name="mobile" placeholder="Your Phone Number" type="tel" tabindex="3" required>
+            <input name="mobile" placeholder="Your Phone Number" type="tel" tabindex="8" required>
           </fieldset>
           
-          <select id="country" name="country" class="hold">
+          <select id="country" name="country" class="hold" tabindex="9">
             <option value="Sri Lanka">Sri Lanka</option>
             <option value="Afganistan">Afghanistan</option>
             <option value="Albania">Albania</option>
@@ -436,7 +438,7 @@ fieldset {
           <label>Your Image(Optional)</label>
           <input type="hidden" name="size" value="1000000">
   	    <div>
-  	        <input type="file" name="image">
+  	        <input type="file" name="image" tabindex="10">
   	    </div>
           
           <br>
