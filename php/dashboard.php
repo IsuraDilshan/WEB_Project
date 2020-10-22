@@ -39,7 +39,6 @@ $uname = $_SESSION["uname"];
     border: 0px;
 }
 .btn:hover{
-    background-color: aquamarine;
     color: black;
 }
 
