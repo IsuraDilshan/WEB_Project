@@ -2,7 +2,7 @@
 $message="";
 if(count($_POST)>0) {
 	$conn = mysqli_connect("localhost","id15181466_trapotourdb","NSBMply20.1SE","id15181466_trapotourdatabase");
-	$result = mysqli_query($conn,"SELECT usertype FROM users WHERE username='" . $_POST["userName"] . "' and password = '". $_POST["password"]."'");
+	$result = mysqli_query($conn,"SELECT * FROM admin WHERE username='" . $_POST["userName"] . "' and password = '". $_POST["password"]."'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
 		echo '<script>alert("Wrong Usarname or Password")</script>';
@@ -55,9 +55,9 @@ if(count($_POST)>0) {
 <center>
 	<div id="bDiv">
 		<lable id="lbl">Have not an account?</lable><br><br>
-		<button class="btn">I'm a tourist</button>
-		<button class="btn" style="margin-left:20px;margin-right:20px;">I'm a guide</button>
-		<button class="btn">I'm a driver</button>
+		<button onclick="document.location='tourist_signup.php'" class="btn">I'm a tourist</button>
+		<button onclick="document.location='guide_signup.php'" class="btn" style="margin-left:20px;margin-right:20px;">I'm a guide</button>
+		<button onclick="document.location='driver_signup.php'" class="btn">I'm a driver</button>
 	</div>
 </center>
 </body></html>

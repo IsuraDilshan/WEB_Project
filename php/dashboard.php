@@ -1,12 +1,13 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: dashboard_login.php");
     exit;
 }
+$uname = $_SESSION["uname"];
 ?>
  
 <!DOCTYPE html>
@@ -38,7 +39,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     border: 0px;
 }
 .btn:hover{
-    background-color: aquamarine;
     color: black;
 }
 
@@ -65,6 +65,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     color: black;
     border: 0px;
 }
+#username{
+    float: right;
+    background-color: red;
+    color: white;
+}
 </style>
 
 </head>
@@ -72,6 +77,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
 
 <div id="top">
+    <span id="username"><?php
+    echo $uname;
+    ?></span><br>
     <button id="logout" onclick="document.location='logout.php'">LogOut</button>
 <center>
     <h2>Trapo Tour Dashboard</h2>

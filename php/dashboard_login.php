@@ -6,9 +6,12 @@ if(count($_POST)>0) {
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
 		echo '<script>alert("Wrong Usarname or Password")</script>';
-	} else {
+	} 
+	else 
+	{
 		session_start();
 		$_SESSION["loggedin"] = true;
+		$_SESSION["uname"] = $_POST["userName"];
 		header("Location: dashboard.php");
 	}
 }
