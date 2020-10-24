@@ -199,7 +199,7 @@ $uname = $_SESSION["uname"];
                 $dbname = "id15181466_trapotourdatabase";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
-                $sql = 'SELECT * from user where usertype = "T"';
+                $sql = 'SELECT * from tourists';
                 if (mysqli_query($conn, $sql)) {
                 echo "";
                 } else {
@@ -213,7 +213,7 @@ $uname = $_SESSION["uname"];
             <tbody>
                 <tr>
                     <th class="b1">
-                        <?php echo $row['userID']; ?>
+                        <?php echo $row['touristID']; ?>
                     </th>
                     <td class="b1">
                         <?php echo $row['firstName']; ?>
@@ -259,6 +259,7 @@ $uname = $_SESSION["uname"];
                     <th class="b2">Email</th>
                     <th class="b2">Mobile</th>
                     <th class="b2">City</th>
+                    <th class="b2">Active</th>
                 </tr>
             </thead>
             <tfoot class="hnf">
@@ -270,6 +271,7 @@ $uname = $_SESSION["uname"];
                     <th class="b2">Email</th>
                     <th class="b2">Mobile</th>
                     <th class="b2">City</th>
+                    <th class="b2">Active</th>
                 </tr>
             </tfoot>
                 <?php
@@ -279,7 +281,7 @@ $uname = $_SESSION["uname"];
                 $dbname = "id15181466_trapotourdatabase";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
-                $sql = 'SELECT * from user where usertype = "G"';
+                $sql = 'SELECT * from guides';
                 if (mysqli_query($conn, $sql)) {
                 echo "";
                 } else {
@@ -293,7 +295,7 @@ $uname = $_SESSION["uname"];
             <tbody>
                 <tr>
                     <th class="b1">
-                        <?php echo $row['userID']; ?>
+                        <?php echo $row['guideID']; ?>
                     </th>
                     <td class="b1">
                         <?php echo $row['firstName']; ?>
@@ -312,6 +314,9 @@ $uname = $_SESSION["uname"];
                     </td>
                     <td class="b1">
                         <?php echo $row['city']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['active']; ?>
                     </td>
                 </tr>
             </tbody>
@@ -339,6 +344,7 @@ $uname = $_SESSION["uname"];
                     <th class="b2">Email</th>
                     <th class="b2">Mobile</th>
                     <th class="b2">City</th>
+                    <th class="b2">Active</th>
                 </tr>
             </thead>
             <tfoot class="hnf">
@@ -350,6 +356,7 @@ $uname = $_SESSION["uname"];
                     <th class="b2">Email</th>
                     <th class="b2">Mobile</th>
                     <th class="b2">City</th>
+                    <th class="b2">Active</th>
                 </tr>
             </tfoot>
                 <?php
@@ -359,7 +366,7 @@ $uname = $_SESSION["uname"];
                 $dbname = "id15181466_trapotourdatabase";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
-                $sql = 'SELECT * from user where usertype = "D"';
+                $sql = 'SELECT * from drivers';
                 if (mysqli_query($conn, $sql)) {
                 echo "";
                 } else {
@@ -373,7 +380,7 @@ $uname = $_SESSION["uname"];
             <tbody>
                 <tr>
                     <th class="b1">
-                        <?php echo $row['userID']; ?>
+                        <?php echo $row['driverID']; ?>
                     </th>
                     <td class="b1">
                         <?php echo $row['firstName']; ?>
@@ -392,6 +399,9 @@ $uname = $_SESSION["uname"];
                     </td>
                     <td class="b1">
                         <?php echo $row['city']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['active']; ?>
                     </td>
                 </tr>
             </tbody>

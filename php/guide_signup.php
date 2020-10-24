@@ -5,7 +5,7 @@ if(count($_POST)>0) {
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 	}
-	$sql = "INSERT INTO user (usertype, image, firstName, lastName, username, password, gender, email, mobile, city) VALUES ('G','" . $_POST["image"] . "','" . $_POST["fname"] . "','" . $_POST["lname"] . "','" . $_POST["username"] . "','" . $_POST["password"] . "','" . $_POST["gender"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["city"] . "')";
+	$sql = "INSERT INTO guides (image, firstName, lastName, username, password, gender, email, mobile, city) VALUES ('" . $_POST["image"] . "','" . $_POST["fname"] . "','" . $_POST["lname"] . "','" . $_POST["username"] . "','" . $_POST["password"] . "','" . $_POST["gender"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["city"] . "')";
 
 	if ($conn->query($sql) === TRUE) {
 		echo '<script>alert("New record created successfully")</script>';
@@ -21,7 +21,7 @@ if(count($_POST)>0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Sign Up</title>
     <style>
         @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
