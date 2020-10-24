@@ -125,7 +125,7 @@ $uname = $_SESSION["uname"];
                 $dbname = "id15181466_trapotourdatabase";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
-                $sql = 'SELECT * from messages';
+                $sql = 'SELECT * from messages ORDER BY msgID DESC;';
                 if (mysqli_query($conn, $sql)) {
                 echo "";
                 } else {
@@ -199,7 +199,7 @@ $uname = $_SESSION["uname"];
                 $dbname = "id15181466_trapotourdatabase";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
-                $sql = 'SELECT * from tourists';
+                $sql = 'SELECT * from tourists ORDER BY touristID DESC;';
                 if (mysqli_query($conn, $sql)) {
                 echo "";
                 } else {
@@ -281,7 +281,7 @@ $uname = $_SESSION["uname"];
                 $dbname = "id15181466_trapotourdatabase";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
-                $sql = 'SELECT * from guides';
+                $sql = 'SELECT * from guides ORDER BY guideID DESC;';
                 if (mysqli_query($conn, $sql)) {
                 echo "";
                 } else {
@@ -366,7 +366,7 @@ $uname = $_SESSION["uname"];
                 $dbname = "id15181466_trapotourdatabase";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
-                $sql = 'SELECT * from drivers';
+                $sql = 'SELECT * from drivers ORDER BY driverID DESC;';
                 if (mysqli_query($conn, $sql)) {
                 echo "";
                 } else {
@@ -418,12 +418,157 @@ $uname = $_SESSION["uname"];
 
 <!--Guide Bookings-->
 <div id="gb">
-gb
+    <div>
+        <table class="table" width="100%" cellspacing="0">
+            <thead class="hnf">
+                <tr>
+                    <th class="b2">G-Booking</th>
+                    <th class="b2">Tourist ID</th>
+                    <th class="b2">Guide ID</th>
+                    <th class="b2">Date</th>
+                    <th class="b2">City</th>
+                    <th class="b2">Conform</th>
+                </tr>
+            </thead>
+            <tfoot class="hnf">
+                <tr>
+                    <th class="b2">G-Booking</th>
+                    <th class="b2">Tourist ID</th>
+                    <th class="b2">Guide ID</th>
+                    <th class="b2">Date</th>
+                    <th class="b2">City</th>
+                    <th class="b2">Conform</th>
+                </tr>
+            </tfoot>
+                <?php
+                $servername = "localhost";
+                $username = "id15181466_trapotourdb";
+                $password = "NSBMply20.1SE";
+                $dbname = "id15181466_trapotourdatabase";
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = 'SELECT * from gbookings ORDER BY gbID DESC;';
+                if (mysqli_query($conn, $sql)) {
+                echo "";
+                } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                $count=1;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) { ?>
+            <tbody>
+                <tr>
+                    <th class="b1">
+                        <?php echo $row['gbID']; ?>
+                    </th>
+                    <td class="b1">
+                        <?php echo $row['touristID']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['guideID']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['date']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['city']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['conform']; ?>
+                    </td>
+                </tr>
+            </tbody>
+            <?php
+            $count++;
+            }
+            } else {
+            echo '0 results';
+            }
+            ?>
+        </table>
+    </div>
 </div>
 
 <!--Driver Bookings-->
 <div id="db">
-db
+    <div>
+        <table class="table" width="100%" cellspacing="0">
+            <thead class="hnf">
+                <tr>
+                    <th class="b2">D-Booking</th>
+                    <th class="b2">Tourist ID</th>
+                    <th class="b2">Driver ID</th>
+                    <th class="b2">Date</th>
+                    <th class="b2">From</th>
+                    <th class="b2">To</th>
+                    <th class="b2">Conform</th>
+                </tr>
+            </thead>
+            <tfoot class="hnf">
+                <tr>
+                    <th class="b2">D-Booking</th>
+                    <th class="b2">Tourist ID</th>
+                    <th class="b2">Driver ID</th>
+                    <th class="b2">Date</th>
+                    <th class="b2">From</th>
+                    <th class="b2">To</th>
+                    <th class="b2">Conform</th>
+                </tr>
+            </tfoot>
+                <?php
+                $servername = "localhost";
+                $username = "id15181466_trapotourdb";
+                $password = "NSBMply20.1SE";
+                $dbname = "id15181466_trapotourdatabase";
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = 'SELECT * from dbookings ORDER BY dbID DESC;';
+                if (mysqli_query($conn, $sql)) {
+                echo "";
+                } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                $count=1;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) { ?>
+            <tbody>
+                <tr>
+                    <th class="b1">
+                        <?php echo $row['dbID']; ?>
+                    </th>
+                    <td class="b1">
+                        <?php echo $row['touristID']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['driverID']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['date']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['fromWhere']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['toWhere']; ?>
+                    </td>
+                    <td class="b1">
+                        <?php echo $row['conform']; ?>
+                    </td>
+                </tr>
+            </tbody>
+            <?php
+            $count++;
+            }
+            } else {
+            echo '0 results';
+            }
+            ?>
+        </table>
+    </div>
 </div>
 
 <script>
