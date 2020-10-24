@@ -22,7 +22,7 @@ if(count($_POST)>0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="icon" href="icon.ico">
+    <link rel="icon" href="images/icon.ico">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
@@ -45,7 +45,7 @@ body {
 	font-size: 12px;
 	line-height:30px;
 	color:#777;
-	background-image: url('background.png');
+	background-image: url('images/background.png');
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 200px;

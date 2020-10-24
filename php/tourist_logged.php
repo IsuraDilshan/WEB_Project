@@ -15,13 +15,13 @@ $uname = $_SESSION["uname"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourist Dashboard</title>
-    <link rel="icon" href="icon.ico">
-    <link rel="stylesheet" type="text/css" href="db.css">
+    <link rel="icon" href="images/icon.ico">
+    <link rel="stylesheet" type="text/css" href="css/db.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body style="background-image: url('bg.png');">
+<body>
 
-    <div id="topDiv" style="background-image: url('top.png');">
+    <div id="topDiv">
         <div id="logo" onmouseover="status()">
             <a href="" target="_blank"><img src="logo.png" id="logo"></a>
         </div>
@@ -65,14 +65,15 @@ $uname = $_SESSION["uname"];
                 if (mysqli_num_rows($result) > 0) {
                 // output data of each row
                 while($row = mysqli_fetch_assoc($result)) { ?>
-                    <div class="card" style="width: 18rem; float: left">
+                    <div class="card" id="crd">
                         <div class="card-body">
+                          <h5 class="card-title">Guide ID : <lable style="color:red;"><?php echo $row['guideID']; ?></lable></h5>
                           <h5 class="card-title"><?php echo $row['firstName']; ?> <?php echo $row['lastName']; ?></h5>
                           <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['city']; ?></h6>
                           <h6 class="card-subtitle mb-2 text-muted">Gender : <?php echo $row['gender']; ?></h6>
                           <p class="card-text"><?php echo $row['mobile']; ?></p>
                           <p class="card-text"><?php echo $row['email']; ?></p>
-                          <a href="" class="card-link" id="crdbtn">Book Now</a>
+                          <!--<a href="" class="card-link" id="crdbtn">Book Now</a>-->
                         </div>
                     </div>
             <?php
@@ -106,14 +107,15 @@ $uname = $_SESSION["uname"];
                 // output data of each row
                 while($row = mysqli_fetch_assoc($result)) { ?>
 
-                    <div class="card" style="width: 18rem; float: left;">
+                    <div class="card" id="crd">
                         <div class="card-body">
+                          <h5 class="card-title">Driver ID : <lable style="color:red;"><?php echo $row['driverID']; ?></lable></h5>
                           <h5 class="card-title"><?php echo $row['firstName']; ?> <?php echo $row['lastName']; ?></h5>
                           <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['city']; ?></h6>
                           <h6 class="card-subtitle mb-2 text-muted">Gender : <?php echo $row['gender']; ?></h6>
                           <p class="card-text"><?php echo $row['mobile']; ?></p>
                           <p class="card-text"><?php echo $row['email']; ?></p>
-                          <a href="" class="card-link" id="crdbtn">Book Now</a>
+                          <!--<a href="" class="card-link" id="crdbtn">Book Now</a>-->
                         </div>
                     </div>
 

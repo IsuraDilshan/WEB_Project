@@ -15,7 +15,7 @@ $uname = $_SESSION["uname"];
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dashboard</title>
-<link rel="icon" href="icon.ico">
+<link rel="icon" href="images/icon.ico">
  <!-- Bootstrap core CSS-->
  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
  <!-- Custom fonts for this template-->

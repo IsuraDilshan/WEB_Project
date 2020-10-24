@@ -19,8 +19,8 @@ if(count($_POST)>0) {
 <html>
 <head>
 <title>Dashboard Login</title>
-<link rel="icon" href="icon.ico">
-<link rel="stylesheet" type="text/css" href="login.css">
+<link rel="icon" href="images/icon.ico">
+<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
 <form name="frmUser" method="post" action="">
