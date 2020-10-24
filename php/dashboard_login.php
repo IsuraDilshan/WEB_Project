@@ -19,6 +19,7 @@ if(count($_POST)>0) {
 <html>
 <head>
 <title>Dashboard Login</title>
+<link rel="icon" href="icon.ico">
 <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>

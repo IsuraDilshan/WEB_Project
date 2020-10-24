@@ -42,21 +42,21 @@ if(count($_POST)>0) {
 	if($isTourist=="true")
 	{
 		session_start();
-		$_SESSION["loggedin"] = true;
+		$_SESSION["tourist"] = true;
 		$_SESSION["uname"] = $_POST["userName"];	
 		header("Location: tourist_logged.php");
 	}
 	else if($isGuide=="true")
 	{
 		session_start();
-		$_SESSION["loggedin"] = true;
+		$_SESSION["guide"] = true;
 		$_SESSION["uname"] = $_POST["userName"];	
 		header("Location: guide_logged.php");
 	}
 	else if($isDriver=="true")
 	{
 		session_start();
-		$_SESSION["loggedin"] = true;
+		$_SESSION["driver"] = true;
 		$_SESSION["uname"] = $_POST["userName"];	
 		header("Location: driver_logged.php");
 	}
@@ -69,6 +69,7 @@ if(count($_POST)>0) {
 <html>
 <head>
 <title>Login</title>
+<link rel="icon" href="icon.ico">
 <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
