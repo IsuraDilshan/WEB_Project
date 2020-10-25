@@ -20,7 +20,7 @@ if(count($_POST)>0) {
 <head>
 <title>Dashboard Login</title>
 <link rel="icon" href="images/icon.ico">
-<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
 <form name="frmUser" method="post" action="">

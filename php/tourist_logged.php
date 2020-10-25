@@ -16,14 +16,14 @@ $uname = $_SESSION["uname"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourist Dashboard</title>
     <link rel="icon" href="images/icon.ico">
-    <link rel="stylesheet" type="text/css" href="css/db.css">
+    <link rel="stylesheet" type="text/css" href="db.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 
     <div id="topDiv">
         <div id="logo" onmouseover="status()">
-            <a href="" target="_blank"><img src="logo.png" id="logo"></a>
+            <a href="" target="_blank"><img src="images/logo.png" id="logo"></a>
         </div>
         <div id="user">
             <div id="username">
@@ -73,7 +73,7 @@ $uname = $_SESSION["uname"];
                           <h6 class="card-subtitle mb-2 text-muted">Gender : <?php echo $row['gender']; ?></h6>
                           <p class="card-text"><?php echo $row['mobile']; ?></p>
                           <p class="card-text"><?php echo $row['email']; ?></p>
-                          <!--<a href="" class="card-link" id="crdbtn">Book Now</a>-->
+                          <a href="#" class="card-link" id="crdbtn" onclick="book()">Book Now</a>
                         </div>
                     </div>
             <?php
@@ -115,7 +115,7 @@ $uname = $_SESSION["uname"];
                           <h6 class="card-subtitle mb-2 text-muted">Gender : <?php echo $row['gender']; ?></h6>
                           <p class="card-text"><?php echo $row['mobile']; ?></p>
                           <p class="card-text"><?php echo $row['email']; ?></p>
-                          <!--<a href="" class="card-link" id="crdbtn">Book Now</a>-->
+                          <a href="#" class="card-link" id="crdbtn" onclick="book()">Book Now</a>
                         </div>
                     </div>
 
