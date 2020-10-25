@@ -147,6 +147,12 @@
     margin-top: 20px;
 }
 
+.main_place_div{
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 600px;
+}
+
 .main_place_image{
     /*border: 1px solid blue;*/
     margin-top: 20px;
@@ -156,8 +162,8 @@
 
 .main_place_cards{
     /*border: 1px solid black;*/
-    width: 45%;
-    height: 400px;
+    width: 30%;
+    height: 250px;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     background-color: rgba(255, 255, 255, 0.8);
