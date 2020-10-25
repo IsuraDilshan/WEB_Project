@@ -65,7 +65,7 @@ $uname = $_SESSION["uname"];
                 if (mysqli_num_rows($result) > 0) {
                 // output data of each row
                 while($row = mysqli_fetch_assoc($result)) { ?>
-                    <div class="card" id="crd">
+                    <div class="card" style="width: 18rem; float: left;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 20px; margin-bottom: 20px;">
                         <div class="card-body">
                           <h5 class="card-title">Guide ID : <lable style="color:red;"><?php echo $row['guideID']; ?></lable></h5>
                           <h5 class="card-title"><?php echo $row['firstName']; ?> <?php echo $row['lastName']; ?></h5>
@@ -107,7 +107,7 @@ $uname = $_SESSION["uname"];
                 // output data of each row
                 while($row = mysqli_fetch_assoc($result)) { ?>
 
-                    <div class="card" id="crd">
+                    <div class="card" style="width: 18rem; float: left;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 20px; margin-bottom: 20px;">
                         <div class="card-body">
                           <h5 class="card-title">Driver ID : <lable style="color:red;"><?php echo $row['driverID']; ?></lable></h5>
                           <h5 class="card-title"><?php echo $row['firstName']; ?> <?php echo $row['lastName']; ?></h5>
