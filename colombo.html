@@ -103,39 +103,101 @@
          <!--photo collection start-->
 
          <div class="photo_coll">
-           <br><p>&nbsp;&nbsp;&nbsp;&nbsp;&#8251;A few pictures of the Gangaramaya Temple</p>
-         </div>
-
-         <div class="main_place_image">
-          <div>
-          <div class="main_place_cards">
-            <img src="images\colombo\ganga1.jpg" alt="image01" style=" border-radius: 15px;">
-          </div>
-          <div class="main_place_cards">
-            <img src="images\colombo\download.jpg" alt="image02" style=" border-radius: 15px;">
-          </div>
+          <br><p>&nbsp;&nbsp;&nbsp;&nbsp;&#8251;A few pictures of Gangaramaya Temple</p>
         </div>
 
-        <div>
-            <div class="main_place_cards">
-              <img src="images\colombo\g1.jpg" alt="image03" style=" border-radius: 15px;">
-            </div></div>
-            <div class="main_place_cards">
-              <img src="images\colombo\gt1.jpg" alt="image04" style=" border-radius: 15px;">
+        <div class="slide-size">
+         <div class="row">
+          <div class="column">
+            <img src="images\colombo\ganga1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images\colombo\download.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images\colombo\g1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images\colombo\gt1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+         </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="images\colombo\ganga1.jpg" style="width:100%">
             </div>
-      
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="images\colombo\download.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="images\colombo\g1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="images\colombo\gt1.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+        </div>
+        
+        <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
 
-        <div>
-              <div class="main_place_cards">
-                <img src="images\colombo\gt2.jpg" alt="image05" style=" border-radius: 15px;">
-              </div>
-        <div>
-              <div class="main_place_cards">
-                <img src="images\colombo\gt3.jpg" alt="image06" style=" border-radius: 15px;">
-              </div>
-              
-             
-        </div></div></div>
+
+
+
         <!--photo collection end-->
 
 
@@ -148,7 +210,7 @@
        <div class="dis-card-main-div" style="padding-top:5px;">  
         <div class="wrapper" id="wrapper01">
             <div class="card"> 
-               <img src="E:\WEB_Project\images\colombo\zoo1.jpeg">
+               <img src="images\colombo\zoo1.jpeg">
                
                <div class="info">
                  <h1>National Zoology</h1>
