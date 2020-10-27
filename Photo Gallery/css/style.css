@@ -7,7 +7,7 @@ body{
     color: white;
     margin: 30px 10px 20px;
     text-shadow: 2px 2px 5px red;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .imgal-text
 {
@@ -49,3 +49,4 @@ body{
     background-color: white;
     border: none;
 }
+
