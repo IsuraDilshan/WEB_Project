@@ -5,232 +5,438 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuwaraeliya</title>
-    <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script language="javascript" type="text/javascript" src="22.09.2020.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/district_logo/logoicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="website_navbar.css">
+    <link rel="stylesheet" type="text/css" href="website_footer.css">
+    <link rel="stylesheet" href="homepage_content.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="district.css">
+    <link rel="stylesheet" href="district-outher-places-card.css">
+    <link rel="stylesheet" href="district-slideshow.css">
 
-</head>
+    <body>
 
-<body style="background-image: url('images/Nuwaraeliya/waterfalls2.jpg'); backdrop-filter: blur(5px);">
+        <!--nav bar start-->
+        <header>
+            <a href="home.html" class="logo"><img src="images\district_logo\mainlogo.png" style="width: 75px;" alt=""></a>
+            <ul>
+                <li><a href="home.html"><b>Home</b></a></li>
+                <li><a href="district.html"><b>District</b></a></li>
+                <li><a href="photo_gallery.html"><b>Photo Gallery</b></a></li>
+                <li><a href="our_service.html"><b>Our Services</b></a></li>
+                <li><a href="php/contact_us.php"><b>Contact Us</b></a></li>
+                <li>
+                    <div class="dropdown">
+                        <span><a href="php/tourist_signup.php"><b>Sing up &#9660;</b></a></span>
+                        <div class="dropdown-content">
+                            <a href="php/tourist_signup.php" style="color: black;"><b>&#9672; As a Traveller</b></a>
+                            <br><br>
+                            <a href="php/guide_signup.php" style="color: black;"><b>&#9672; As a Guide</b></a>
+                            <br><br>
+                            <a href="php/driver_signup.php" style="color: black;"><b>&#9672; As a Driver</b></a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="php/login.php"><b>Login</b></a></li>
+            </ul>
+        </header>
 
-    <!--NavBar here-->
+        <!--add background image in style tag,,-->
+        <section class="banner" style=" background: url(images/Nuwaraeliya/hakgala4.jpg); position: relative; width: 100%; height: 150vh;background-size: 100% 100%;"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <!--nav bar end-->
 
-    <!--Distric Name here-->
-    <center>
-        <h1 class="name">NUWARAELIYA</h1>
-    </center>
+        <!--page content-->
 
-    <!--photo or slid show here-->
-    <center>
-        <div class="container" style="width: 1000px; margin-top: 100px;">
-            <div id="slides">
-                <img src="images/Nuwaraeliya/hakgala4.jpg">
-                <img src="images/Nuwaraeliya/hakgala.jpg">
-                <img src="images/Nuwaraeliya/hakgala1.jpg">
-                <img src="images/Nuwaraeliya/hakgala2.jpg">
-                <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
-                <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+
+        <!--Distric Name here-->
+        <center>
+            <p class="dis-name"><b>NUWARAELIYA</b></p>
+        </center>
+        <br>
+
+        <!--Dictrict Eke Wadana-start-->
+        <div class="wadana">
+            <div id="wadana-uda">
+                <p><br>&nbsp;&nbsp;&nbsp;&nbsp;Nuwara Eliya District is a district in Central Province, Sri Lanka, centered on the tourist city of Nuwara Eliya. Nuwara Eliya district is located in the hill country of Central Province. The terrain is generally
+                    mountainous, with deep valleys.
+                </p>
+            </div>
+            <div id="wadana-button">
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Nuwara_Eliya_District" id="district-more" target="_blank" class="discription-button"><span>More Details</span></a>
             </div>
         </div>
-    </center>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/139719/jquery.slides.min.js"></script>
-    <script>
-        $(function() {
-            $('#slides').slidesjs({
-                width: 940,
-                height: 528,
-                navigation: false,
-                play: {
-                    auto: true,
-                    interval: 3000,
-                },
-                effect: {
-                    slide: {
-                        speed: 1500
-                    },
-                    fade: {
-                        speed: 300,
-                    },
+        </div>
+        <!--Dictrict Eke Wadana-End-->
+
+        <div class="best-place">
+            <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&#8251;The main tourist place in Nuwaraeliya District.</p>
+        </div>
+
+        <!--Dicription start-->
+        <div class="discription">
+            <div id="place">
+                <div id="dis-para">
+                    <p class="discription-title"><b>Hakgala Botanical Garden</b></p>
+                    <br>
+                    <p class="discription-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hakgala Botanical Garden is the second largest garden among the five botanical gardens in Sri Lanka and is contiguous to Hakgala Strict Nature Reserve, which is the home to a variety
+                        of wild life, including bears, monkeys and birds. Situated some 10 kilometres South of Nuwara Eliya. The main sections of the garden are the rock garden, water garden, fern garden, Japanese garden and the seed room. Hakgala is
+                        a temperate hill-country garden, where the lovely low-country lotus and water lily mingles in their serene simplicity with sophisticated English roses, pre-historic looking ferns, and endemic orchids.The garden was established
+                        in 1861, under George Henry Kendrick Thwaites as an experimental cultivation of Cinchona, a commercial crop thriving at the time. Once after the Tea replaced the Cinchona, it was turned into an experimental Tea cultivation. In
+                        1884 it transformed to a garden. Since then many sub tropical and some temperate plants were planted in the gardens..</p>
+                    <br><br>
+                </div>
+                <div id="more-details-button">
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Hakgala_Botanical_Garden" target="_blank" class="discription-button"><span>More Details</span></a>
+                </div>
+            </div>
+
+            <div id="map">
+                <iframe al src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.794402268002!2d80.8215284!3d6.9265849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9ed0d9523eaca78!2sHakgala%20Botanical%20Gardens!5e0!3m2!1sen!2slk!4v1603113168579!5m2!1sen!2slk"></iframe>
+            </div>
+        </div>
+        <!--Dicription end-->
+
+        <!--photo collection start-->
+
+        <div class="photo_coll">
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&#8251;A few pictures of Hakgala Botanical Garden.</p>
+        </div>
+
+        <div class="slide-size">
+            <div class="row">
+                <div class="column">
+                    <img src="images/Nuwaraeliya/hakgala5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/Nuwaraeliya/hakgala.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/Nuwaraeliya/hakgala1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/Nuwaraeliya/hakgala2.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Nuwaraeliya/hakgala5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Nuwaraeliya/hakgala.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Nuwaraeliya/hakgala1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Nuwaraeliya/hakgala2.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
                 }
-            });
-        });
-    </script>
-    <br><br>
-    <!--Description here for aboue place-->
-    <div class="card" style="width: 80%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: rgba(255, 255, 255, 0.8);">
-        <div class="card-body" style="width: 50%; position:relative;">
-            <h5 class="card-title">Hakgala Botanical Garden</h5>
-            <p class="card-text">Hakgala Botanical Garden is the second largest garden among the five botanical gardens in Sri Lanka and is contiguous to Hakgala Strict Nature Reserve, which is the home to a variety of wild life, including bears, monkeys and birds. Situated
-                some 10 kilometres South of Nuwara Eliya. The main sections of the garden are the rock garden, water garden, fern garden, Japanese garden and the seed room. Hakgala is a temperate hill-country garden, where the lovely low-country lotus
-                and water lily mingles in their serene simplicity with sophisticated English roses, pre-historic looking ferns, and endemic orchids.The garden was established in 1861, under George Henry Kendrick Thwaites as an experimental cultivation
-                of Cinchona, a commercial crop thriving at the time. Once after the Tea replaced the Cinchona, it was turned into an experimental Tea cultivation. In 1884 it transformed to a garden. Since then many sub tropical and some temperate plants
-                were planted in the gardens.</p>
-            <a href="https://en.wikipedia.org/wiki/Hakgala_Botanical_Garden" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+        <!--photo collection end-->
+
+        <!--end of page content-->
+
+        <!--district outher places cards start-->
+        <div id="district-visite">
+            <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&#8251;Visite More places</p>
         </div>
 
-        <div id="map">
-            <iframe al src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15842.794402268002!2d80.8215284!3d6.9265849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9ed0d9523eaca78!2sHakgala%20Botanical%20Gardens!5e0!3m2!1sen!2slk!4v1603113168579!5m2!1sen!2slk"></iframe>
+        <div class="dis-card-main-div" style="padding-top:5px;">
+            <div class="wrapper" id="wrapper01">
+                <div class="card">
+                    <img src="images/Nuwaraeliya/piduruthalagala.jpg">
+                    <div class="info">
+                        <h1>Piduruthalagala</h1>
+                        <p>Pidurutalagala Mountain in Sri Lanka, which is also called Mount Pedro in in English is the tallest mountain on the island and situated in the Central Province, north – north east to the town of Nuwara Eliya.</p>
+                        <a href="https://en.wikipedia.org/wiki/Pidurutalagala" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Pidurutalagala/@7.0008331,80.7645785,15z/data=!3m1!4b1!4m5!3m4!1s0x3ae3802ac4e14a3b:0x2e692126d447a56f!8m2!3d7.0008333!4d80.7733333" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/gregory.jpg">
+                    <div class="info">
+                        <h1>Lake Greogory</h1>
+                        <p>This lake is popular with domestic tourists who enjoy strolling the footpaths, taking out a swan-shaped pedal boat or trotting around on a pony. There are picnic tables, a small restaurant and a snack bar. </p>
+                        <a href="https://en.wikipedia.org/wiki/Lake_Gregory_(Nuwara_Eliya)" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Lake+Gregory/@6.9566665,80.7695785,15z/data=!3m1!4b1!4m5!3m4!1s0x3ae380f70b675859:0x3362d6f28dc32189!8m2!3d6.9566667!4d80.7783333" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/waterfalls1.jpg">
+                    <div class="info">
+                        <h1>Bomburuella Waterfall</h1>
+                        <p>The beautiful Bomburu Ella Falls is a collection of about 10 little-known jungle waterfalls, situated between 1500 and 2000m above sea level.They are served by the upper segment of the Uma River, known as the Duulgala River.</p>
+                        <a href="https://en.wikipedia.org/wiki/Bomburu_Ella" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Bomburuella+Waterfall+Uva+Paranagama/@6.9473805,80.8285999,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae47f6ce01e48c5:0x1c720b8e664b05fa!8m2!3d6.9473752!4d80.8307886" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/kirigalpoththa1.jpg">
+                    <div class="info">
+                        <h1>Kirigalpoththa Mountain</h1>
+                        <p>Kirigalpoththa is the 2nd highest Mountain of Sri Lanka after Pidurutalagal, With a peak elevation of 2,388 meters above sea level and the highest point in the Horton Plains National Park and also the highest peak accessible to
+                            the public. </p>
+                        <a href="https://en.wikipedia.org/wiki/Kirigalpotta" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Kirigalpoththa+Mountain+Peak/@6.7991195,80.7650259,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae38973d11c1a7b:0x98deb286ab8ebca6!8m2!3d6.7991142!4d80.7672146" class="btn">Direction</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper" id="wrapper02">
+                <div class="card">
+                    <img src="images/Nuwaraeliya/kotmaledam.jpg">
+                    <div class="info">
+                        <h1>Kotmale Dam</h1>
+                        <p>The Kotmale Dam is a large hydro-electric and irrigation dam. Located at Kotmale, the dam is the second largest hydroelectric power station in Sri Lanka.The dam generates power from three 67 MW turbines. </p>
+                        <a href="https://en.wikipedia.org/wiki/Kotmale_Dam" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Kotmale+Dam/@7.0606286,80.5947676,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae3771867520cd1:0x250f028443cf45ec!8m2!3d7.0606233!4d80.5969563" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/horton.jpg">
+                    <div class="info">
+                        <h1>Horton Plains</h1>
+                        <p>Horton Plains in Sri Lanka, is the coldest and windiest location in the country.Horton Plains was declared a National Park in 1988 and covers 3160 hectares of grasslands interspersed with forest and forms an undulating plateau
+                            more than 2000m high </p>
+                        <a href="https://en.wikipedia.org/wiki/Horton_Plains_National_Park" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Horton+Plains+National+Park/@6.8021028,80.8052159,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae3882edb4b78ef:0xcebca89153777249!8m2!3d6.8020975!4d80.8074046" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/victoriadam.jpg">
+                    <div class="info">
+                        <h1>Victoria Dam</h1>
+                        <p>The Victoria Dam is built at a deep valley just above the Victoria Falls rapids and 300 meters below the point where the Hulu Ganga meets the Mahaveli River.</p>
+                        <a href="https://en.wikipedia.org/wiki/Victoria_Dam_(Sri_Lanka)" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Victoria+Dam/@7.241232,80.7829303,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae3623e87925729:0xc1923e6cbe703ba7!8m2!3d7.2412267!4d80.785119" class="btn">Direction</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/moonplains.jpg">
+                    <div class="info">
+                        <h1>Moon Plains</h1>
+                        <p>One of the best place to have in Sri Lanka is Moon Plains, also known as Sandathenna, is situated along Ranhawadigama Road in Nuwara Eliya. </p>
+                        <a href="https://sv.wikipedia.org/wiki/Moon_Plains" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Moon+Plains/@6.9431583,80.8179783,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae47f663dfaef3d:0x9da34e3b3dfcca03!8m2!3d6.943153!4d80.820167" class="btn">Direction</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper" id="wrapper03">
+                <div class="card">
+                    <img src="images/Nuwaraeliya/victoria.jpg">
+                    <div class="info">
+                        <h1>Victoria Park</h1>
+                        <p>Victoria Park, with its beautiful flowers and gardens is a must-visit when in Nuwara Eliya. Even if you aren't particularly interested in flowers, it's still a great place to go for a walk and relax. </p>
+                        <a href="https://en.wikipedia.org/wiki/Victoria_Park,_Nuwara_Eliya" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Victoria+Park,+Nuwara+Eliya./@6.9690616,80.7660158,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae3805288fa714b:0xbb44afbf5324004c!8m2!3d6.9690563!4d80.7682045" class="btn">Direction</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/labookale.jpg">
+                    <div class="info">
+                        <h1>Damro Labookallie Tea Lounge</h1>
+                        <p>Labookellie Estate Tea Factory, renowned for producing some of Ceylon’s finest Teas and the estate itself, established nearly 150 years ago, is perhaps the second oldest tea plantation in the Island. </p>
+                        <a href="http://damrotealounge.com/damro_teal_ounge.php" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Damro+Labookellie+Tea+Lounge/@7.0243207,80.7169064,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae378cafa38f7bd:0x2b9827c576583723!8m2!3d7.0243154!4d80.7190951" class="btn">Direction</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/golf.jpg">
+                    <div class="info">
+                        <h1>Golf Club, Nuwaraeliya</h1>
+                        <p>The Nuwara Eliya Golf Club, founded in 1889, is one of the oldest golf clubs in Asia and probably the world. It is an institution, rich in tradition, history and carries an ambience unparalleled in this country. </p>
+                        <a href="https://en.wikipedia.org/wiki/Nuwara_Eliya_Golf_Club" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Nuwara+Eliya+Golf+Club/@6.9717423,80.763542,17z/data=!3m1!4b1!4m8!3m7!1s0x3ae381b2ed41bd67:0x210439c71d5fbf76!5m2!4m1!1i2!8m2!3d6.971737!4d80.7657307" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Nuwaraeliya/ambewela.jpg">
+                    <div class="info">
+                        <h1>Ambewela Farm</h1>
+                        <p>The Ambewela dairy brand was launched in 2004, with the vision of providing a premium quality dairy products to the Sri Lankan consumers and to contribute towards the development of the local dairy industry </p>
+                        <a href="https://en.wikipedia.org/wiki/Ambewela" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Ambewela+Farm/@6.8692726,80.7934624,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae3879b9d429d69:0x3428d075cfa9a476!8m2!3d6.8692673!4d80.7956511" class="btn">Direction</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+
+        <!--district outher places cards end-->
 
 
-    <br><br>
-    <!--Other places here-->
-    <div style="margin-top: 20px;">
+        <!--Footer-->
+        <div class="footer-maindiv" style="padding-top: 60px;">
 
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/piduruthalagala.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Piduruthalagala</h5>
-                    <p class="card-text">Pidurutalagala Mountain in Sri Lanka, which is also called Mount Pedro in in English is the tallest mountain on the island and situated in the Central Province, north – north east to the town of Nuwara Eliya. </p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
+            <div class="footer">
+
+                <div class="inner-footer">
+
+                    <div class="footer-items">
+                        <a href="home.html" class="logo"><img src="images/district_logo/2ndlogo.png" style="width: 200px;" alt=""></a>
+                        <p>
+                            Travel freely. Travel to places you haven't seen. Enjoy your life. <b>Find Sri Lanka's Aesthetics.</b> Join us to find out about your unseen destinations.
+                        </p>
+
+                    </div>
+
+                    <div class="footer-items">
+                        <h1>Quick Links</h1>
+                        <div class="border"></div>
+
+                        <ul>
+                            <a href="district.html">
+                                <li>District</li>
+                            </a>
+                            <a href="photo_gallery.html">
+                                <li>Photo Gallery</li>
+                            </a>
+                            <a href="our_service.html">
+                                <li>Our Services</li>
+                            </a>
+                            <a href="php/contact_us.php">
+                                <li>Contact Us</li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-items">
+                        <h1>Main Districts</h1>
+                        <div class="border"></div>
+
+                        <ul>
+                            <a href="kandy.html">
+                                <li>Kandy</li>
+                            </a>
+                            <a href="colombo.html">
+                                <li>Colombo</li>
+                            </a>
+                            <a href="galle.html">
+                                <li>Galle</li>
+                            </a>
+                            <a href="jaffna.html">
+                                <li>Jaffna</li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-items">
+                        <h1>Contact Us</h1>
+                        <div class="border"></div>
+
+                        <ul>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>No.25,Pitipana,Homagama,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Lanaka
+                            </li><br>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>0094774521896
+                            </li><br>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i> trapotour@gmail.com
+                            </li>
+                        </ul>
+                        <div class="social-media">
+                            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    Copyright &copy; Trapo Tour 2020. All rights reserved.
                 </div>
             </div>
-        </figure>
+        </div>
+        <!--footer end-->
 
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/gregory.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Lake Gregory</h5>
-                    <p class="card-text">This lake is popular with domestic tourists who enjoy strolling the footpaths, taking out a swan-shaped pedal boat or trotting around on a pony. There are picnic tables, a small restaurant and a snack bar. </p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/waterfalls1.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Bomburuella Waterfall</h5>
-                    <p class="card-text">The beautiful Bomburu Ella Falls is a collection of about 10 little-known jungle waterfalls, situated between 1500 and 2000m above sea level.They are served by the upper segment of the Uma River, known as the Duulgala River.</p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/kirigalpoththa1.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Kirigalpoththa Mountain</h5>
-                    <p class="card-text">Kirigalpoththa is the 2nd highest Mountain of Sri Lanka after Pidurutalagal, With a peak elevation of 2,388 meters above sea level and the highest point in the Horton Plains National Park and also the highest peak accessible to the
-                        public.
-                    </p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/kotmaledam.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Kotmale Dam</h5>
-                    <p class="card-text">The Kotmale Dam is a large hydro-electric and irrigation dam. Located at Kotmale, the dam is the second largest hydroelectric power station in Sri Lanka.The dam generates power from three 67 MW turbines.</p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/horton.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Horton Plains</h5>
-                    <p class="card-text">Horton Plains in Sri Lanka, is the coldest and windiest location in the country.Horton Plains was declared a National Park in 1988 and covers 3160 hectares of grasslands interspersed with forest and forms an undulating plateau more
-                        than 2000m high.</p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/victoriadam.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Victoria Dam</h5>
-                    <p class="card-text">The Victoria Dam is built at a deep valley just above the Victoria Falls rapids and 300 meters below the point where the Hulu Ganga meets the Mahaveli River.</p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/moonplains.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Moon Plains</h5>
-                    <p class="card-text">One of the best place to have in Sri Lanka is Moon Plains, also known as Sandathenna, is situated along Ranhawadigama Road in Nuwara Eliya.</p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/victoria.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Victoria Park</h5>
-                    <p class="card-text">Victoria Park, with its beautiful flowers and gardens is a must-visit when in Nuwara Eliya. Even if you aren't particularly interested in flowers, it's still a great place to go for a walk and relax. </p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/labookale.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Damro Labookallie Tea Lounge</h5>
-                    <p class="card-text">Labookellie Estate Tea Factory, renowned for producing some of Ceylon’s finest Teas and the estate itself, established nearly 150 years ago, is perhaps the second oldest tea plantation in the Island.</p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/golf.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Golf Club, Nuwaraeliya</h5>
-                    <p class="card-text">The Nuwara Eliya Golf Club, founded in 1889, is one of the oldest golf clubs in Asia and probably the world. It is an institution, rich in tradition, history and carries an ambience unparalleled in this country.</p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-        <figure class="wave">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Nuwaraeliya/ambewela.jpg" style="width: 18rem; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Ambewela Farm</h5>
-                    <p class="card-text">The Ambewela dairy brand was launched in 2004, with the vision of providing a premium quality dairy products to the Sri Lankan consumers and to contribute towards the development of the local dairy industry.</p>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">More Details</a>
-                    <a href="#" target="_blank" class="btn btn-primary" id="cardButton">Direction</a>
-                </div>
-            </div>
-        </figure>
-
-
-
-    </div>
-
-</body>
+    </body>
 
 </html>
