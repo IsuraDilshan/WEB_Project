@@ -19,11 +19,12 @@ body{
 }
 .gallery
 {
-    width: 100%;
+    width: 91%;
     height: 1500px;
     margin-top: 40px;
     word-spacing: 16px;
     margin-left: 80px;
+    margin-right: 10px ;
    /* border: 2px solid red; */
     
     
@@ -49,4 +50,23 @@ body{
     background-color: white;
     border: none;
 }
+.left
+{
+    float: left;
+    
+}
+
+.right
+{
+    float: right;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+.sizes
+{
+    
+    width: 100px;
+    height: 100px;
+}
+
 
