@@ -1,0 +1,61 @@
+body{
+    font-family: calibri;
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.tblLogin {
+	border:0px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    margin-top: 310px;
+}
+.tableheader {
+    font-size: 24px;
+}
+.tableheader td {
+    padding: 20px;
+}
+.tablerow td{
+	text-align:center;
+}
+.message {
+color: #FF0000;
+font-weight: bold;
+text-align: center;
+width: 100%;
+}
+.login-input {
+	border: #CCC 1px solid;
+    padding: 10px 20px;
+}
+.btnSubmit {
+	padding: 10px 20px;
+    background:#4A4B8C;
+    border: 0px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+#bDiv{
+    border:0px;
+    background: rgba(255,255,255,0.6);
+    width: 500px;
+    height: 90px;
+    border-radius: 10px;
+}
+.btn{
+    padding: 10px 20px;
+    background: #4A4B8C;
+    border: 0px;
+    color:white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+#lbl{
+    font-size: 20px;
+    font-weight: 400;
+}
+
