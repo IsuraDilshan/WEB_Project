@@ -4,7 +4,7 @@ $isTourist = "false";
 $isGuide = "false";
 $isDriver = "false";
 if(count($_POST)>0) {
-	$conn = mysqli_connect("localhost","id15181466_trapotourdb","NSBMply20.1SE","id15181466_trapotourdatabase");
+	$conn = mysqli_connect("localhost","sriarana_trapo","NSBMply20.1SE","sriarana_trapotour");
 
 	//is tourist?
 	$result = mysqli_query($conn,"SELECT * FROM tourists WHERE username='" . $_POST["userName"] . "' and password = '". $_POST["password"]."'");

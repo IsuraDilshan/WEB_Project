@@ -120,9 +120,9 @@ $uname = $_SESSION["uname"];
             </tfoot>
                 <?php
                 $servername = "localhost";
-                $username = "id15181466_trapotourdb";
+                $username = "sriarana_trapo";
                 $password = "NSBMply20.1SE";
-                $dbname = "id15181466_trapotourdatabase";
+                $dbname = "sriarana_trapotour";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql = 'SELECT * from messages ORDER BY msgID DESC;';
@@ -194,9 +194,9 @@ $uname = $_SESSION["uname"];
             </tfoot>
                 <?php
                 $servername = "localhost";
-                $username = "id15181466_trapotourdb";
+                $username = "sriarana_trapo";
                 $password = "NSBMply20.1SE";
-                $dbname = "id15181466_trapotourdatabase";
+                $dbname = "sriarana_trapotour";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql = 'SELECT * from tourists ORDER BY touristID DESC;';
@@ -276,9 +276,9 @@ $uname = $_SESSION["uname"];
             </tfoot>
                 <?php
                 $servername = "localhost";
-                $username = "id15181466_trapotourdb";
+                $username = "sriarana_trapo";
                 $password = "NSBMply20.1SE";
-                $dbname = "id15181466_trapotourdatabase";
+                $dbname = "sriarana_trapotour";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql = 'SELECT * from guides ORDER BY guideID DESC;';
@@ -361,9 +361,9 @@ $uname = $_SESSION["uname"];
             </tfoot>
                 <?php
                 $servername = "localhost";
-                $username = "id15181466_trapotourdb";
+                $username = "sriarana_trapo";
                 $password = "NSBMply20.1SE";
-                $dbname = "id15181466_trapotourdatabase";
+                $dbname = "sriarana_trapotour";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql = 'SELECT * from drivers ORDER BY driverID DESC;';
@@ -442,9 +442,9 @@ $uname = $_SESSION["uname"];
             </tfoot>
                 <?php
                 $servername = "localhost";
-                $username = "id15181466_trapotourdb";
+                $username = "sriarana_trapo";
                 $password = "NSBMply20.1SE";
-                $dbname = "id15181466_trapotourdatabase";
+                $dbname = "sriarana_trapotour";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql = 'SELECT * from gbookings ORDER BY gbID DESC;';
@@ -519,9 +519,9 @@ $uname = $_SESSION["uname"];
             </tfoot>
                 <?php
                 $servername = "localhost";
-                $username = "id15181466_trapotourdb";
+                $username = "sriarana_trapo";
                 $password = "NSBMply20.1SE";
-                $dbname = "id15181466_trapotourdatabase";
+                $dbname = "sriarana_trapotour";
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
                 $sql = 'SELECT * from dbookings ORDER BY dbID DESC;';
