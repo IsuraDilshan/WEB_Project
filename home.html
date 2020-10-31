@@ -16,29 +16,30 @@
 <body>
 
    <!--nav bar start-->
-    <header>
-      <a href="#" class="logo"><img src="Homepage_image/mainlogo.png" style="width: 80px;" alt=""></a>
-      <ul>
-        <li><a href="#"><b>District</b></a></li>
-        <li><a href="#"><b>Photo Gallery</b></a></li>
-        <li><a href="#"><b>Our Services</b></a></li>
-        <li><a href="#"><b>Contact Us</b></a></li>
+   <header>
+    <a href="home.html" class="logo"><img src="homepage_image/mainlogo.png" style="width: 75px;" alt=""></a>
+    <ul>
+        <li><a href="home.html"><b>Home</b></a></li>
+        <li><a href="district.html"><b>District</b></a></li>
+        <li><a href="photo_gallery.html"><b>Photo Gallery</b></a></li>
+        <li><a href="our_service.html"><b>Our Services</b></a></li>
+        <li><a href="php/contact_us.php"><b>Contact Us</b></a></li>
         <li>
             <div class="dropdown">
-              <span><a href="#"><b>Sing up &#9660;</b></a></span>
-              <div class="dropdown-content">
-                <a href="#" style="color: black;"><b>&#9672; As a Traveller</b></a>
-                <br><br>
-                <a href="#" style="color: black;"><b>&#9672; As a Guide</b></a>
-                <br><br>
-                <a href="#" style="color: black;"><b>&#9672; As a Driver</b></a>
-              </div>
+                <span><a href="php/tourist_signup.php"><b>Sing up &#9660;</b></a></span>
+                <div class="dropdown-content">
+                    <a href="php/tourist_signup.php" style="color: black;"><b>&#9672; As a Traveller</b></a>
+                    <br><br>
+                    <a href="php/guide_signup.php" style="color: black;"><b>&#9672; As a Guide</b></a>
+                    <br><br>
+                    <a href="php/driver_signup.php" style="color: black;"><b>&#9672; As a Driver</b></a>
+                </div>
             </div>
         </li>
-        <li><a href="#"><b>Login</b></a></li>
-      </ul>  
-     </header>
-     <section class="banner" style=" background: url(Homepage_image/mainbackground.png); position: relative; width: 100%; height: 100vh;background-size: 100% 100%;"></section>
+        <li><a href="php/login.php"><b>Login</b></a></li>
+    </ul>
+</header>
+     <section class="banner" style=" background: url(homepage_image/mainbackground.png); position: relative; width: 100%; height: 100vh;background-size: 100% 100%;"></section>
      <script type="text/javascript">
         window.addEventListener("scroll",function(){
             var header = document.querySelector("header");
@@ -52,8 +53,7 @@
 
 
 
-
-     <div class="note01">
+    <div class="note01">
        <center><h1 id="uda-titel">අයුබොවන්&#8280;Welcome&#8280;வணக்கம்</h1></center>
 
        <div class="note02">
@@ -81,6 +81,46 @@
             </div>
          </div>
      </div>
+
+     <div class="note05">
+           
+        <div class="covid-head">
+            <center><p style="margin-top: 30px; color: red;">&#x26A0; COVID-19 pandemic Situation &#x26A0;</p></center>
+            <br><p style="font-size: 20px;"><b> &nbsp;&nbsp;&nbsp;&#x25B8;To prevent COVID-19, follow these 10 steps:-</b></p>
+        </div>
+        <div class="covid-con1">
+            <div id="image01">
+                <img src="homepage_image\covide 04.jpg" alt="image04" width="100%">
+            </div>
+        </div>
+        <div class="covid-con2">
+            <div id="covid-con2-details">
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; Wash your hands frequently and thoroughly.</p><br> 
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; Avoid touching your mouth, nose, and eyes.</p><br>
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; Cover your mouth when you cough or sneeze with the bend of your elbow<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or tissue (if you use a tissue, dispose of it immediately in a closed bin and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wash your hands or use a hand sanitizer).</p><br>
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; Avoid crowded places.</p><br>
+            </div>
+        </div>
+        <div class="covid-con3">
+            <div id="covid-con3-details">
+                <p style="color: red;">&nbsp;&nbsp;&#x22C6;&nbsp; Always use a face mask whenever possible.</p><br> 
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; Practice physical distancing, try to maintain at least 1m distance from &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;others .</p><br>
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; Routinely clean and disinfect surfaces.</p><br>
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; Stay at home if you don’t feel well (fever and respiratory symptoms).</p><br>
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; If you have symptoms (fever, cough, and difficulty breathing) seek medical &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;care, first by phone.</p><br>
+                <p>&nbsp;&nbsp;&#x22C6;&nbsp; Keep up-to-date on the latest information from verified sources like MoH &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and WHO.</p><br> 
+            </div>
+        </div>
+        <div class="covid-con4">
+            <div id="image04">
+                <img src="homepage_image\covide 01.jpg" alt="image02" width="100%">
+            </div>
+        </div>
+     </div>
+     <div id="covid-button">
+        <br><br>
+        <a href="https://www.hpb.health.gov.lk/en" id="covid-more" target="_blank" class="covid-button"><span>Find more about COVID-19</span></a>
+    </div>
     
      <!--home content end-->
 
@@ -88,8 +128,8 @@
         <div class="Homecard-maindiv">
 
                   <div class="H-text">
-                   <h2><a href="home.html" style="color: black; font-family: 'Ubuntu', sans-serif; ">BEST DISTRICTS OF THE ISLAND</a></h2><br>
-                   <p>Find and go your most suitable places</p>
+                   <h2><a href="home.html" style="color: black; font-family: 'Ubuntu', sans-serif; font-size: 40px; ">BEST DISTRICTS OF THE ISLAND</a></h2><br>
+                   <p style="font-family: 'Satisfy', cursive; font-size: 30px;">Find and go your most suitable places</p>
                   </div>
                   <div class="spacediv"></div>
 
