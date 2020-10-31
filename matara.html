@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matara</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/district_logo/logoicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="website_navbar.css">
+    <link rel="stylesheet" type="text/css" href="website_footer.css">
+    <link rel="stylesheet" href="homepage_content.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="district.css">
+    <link rel="stylesheet" href="district-outher-places-card.css">
+    <link rel="stylesheet" href="district-slideshow.css">
+
+    <body>
+
+        <!--nav bar start-->
+        <header>
+            <a href="home.html" class="logo"><img src="images\district_logo\mainlogo.png" style="width: 75px;" alt=""></a>
+            <ul>
+                <li><a href="home.html"><b>Home</b></a></li>
+                <li><a href="district.html"><b>District</b></a></li>
+                <li><a href="photo_gallery.html"><b>Photo Gallery</b></a></li>
+                <li><a href="our_service.html"><b>Our Services</b></a></li>
+                <li><a href="php/contact_us.php"><b>Contact Us</b></a></li>
+                <li>
+                    <div class="dropdown">
+                        <span><a href="php/tourist_signup.php"><b>Sing up &#9660;</b></a></span>
+                        <div class="dropdown-content">
+                            <a href="php/tourist_signup.php" style="color: black;"><b>&#9672; As a Traveller</b></a>
+                            <br><br>
+                            <a href="php/guide_signup.php" style="color: black;"><b>&#9672; As a Guide</b></a>
+                            <br><br>
+                            <a href="php/driver_signup.php" style="color: black;"><b>&#9672; As a Driver</b></a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="php/login.php"><b>Login</b></a></li>
+            </ul>
+        </header>
+
+        <!--add background image in style tag,,-->
+        <section class="banner" style=" background: url(images/Matara/mirissa1.jpg); position: relative; width: 100%; height: 150vh;background-size: 100% 100%;"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <!--nav bar end-->
+
+        <!--page content-->
+
+
+        <!--Distric Name here-->
+        <center>
+            <p class="dis-name"><b>MATARA</b></p>
+        </center>
+        <br>
+
+        <!--Dictrict Eke Wadana-start-->
+        <div class="wadana">
+            <div id="wadana-uda">
+                <p><br>&nbsp;&nbsp;&nbsp;&nbsp;Matara is a district in Southern Province, Sri Lanka. It is one of 25 districts of Sri Lanka, the second level administrative division of the country.Matara is a busy, booming and sprawling commercial town that
+                    owes almost nothing to tourism – which can make it a fascinating window on modern Sri Lankan life. Matara’s main attractions are its ramparts, Dutch architecture, a well-preserved fort and its street life.
+                </p>
+            </div>
+            <div id="wadana-button">
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Matara_District" id="district-more" target="_blank" class="discription-button"><span>More Details</span></a>
+            </div>
+        </div>
+        </div>
+        <!--Dictrict Eke Wadana-End-->
+
+        <div class="best-place">
+            <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&#8251;The main tourist place in the Matara district.</p>
+        </div>
+
+        <!--Dicription start-->
+        <div class="discription">
+            <div id="place">
+                <div id="dis-para">
+                    <p class="discription-title"><b>Mirissa Beach</b></p>
+                    <br>
+                    <p class="discription-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fringing two sandy bays separated by a rock island reachable at low tide, Mirissa feels hidden away compared to Sri Lanka’s other busier resort towns. While the quiet sands are
+                        sprinkled with bars and surf rentals, it’s Mirissa’s May-to-November whale-watching boat trips that steal the show.Mirissa is the largest fishing port on the south coast and is known for its tuna, mullet, snapper and butterfish.
+                        In 1980 the first tourist accommodation was built however it wasn't until the mid-1990s that tourism to the town started to dramatically increase. Mirissa was affected by the tsunami caused by the 2004 Indian Ocean earthquake,
+                        with numerous homes, guesthouses, shops, schools and temples destroyed or damaged and fourteen reported deaths.</p>
+                    <br><br>
+                </div>
+                <div id="more-details-button">
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Mirissa" target="_blank" class="discription-button"><span>More Details</span></a>
+                </div>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.3707029196266!2d80.45653931337253!3d5.943542031285651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13fd4c636d5ff%3A0xb81456b9b41a93b2!2sMirissa%20Beach!5e0!3m2!1sen!2slk!4v1604158908836!5m2!1sen!2slk"></iframe>
+            </div>
+        </div>
+        <!--Dicription end-->
+
+        <!--photo collection start-->
+
+        <div class="photo_coll">
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&#8251;A few pictures of the Mirissa Beach</p>
+        </div>
+
+        <div class="slide-size">
+            <div class="row">
+                <div class="column">
+                    <img src="images/Matara/mirissa.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/Matara/mirissa4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/Matara/mirissa 2.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/Matara/mirissa3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Matara/mirissa.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Matara/mirissa4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Matara/mirissa 2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Matara/mirissa3.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+        <!--photo collection end-->
+
+        <!--end of page content-->
+
+        <!--district outher places cards start-->
+        <div id="district-visite">
+            <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&#8251;Visit more places</p>
+        </div>
+
+        <div class="dis-card-main-div" style="padding-top:5px;">
+            <div class="wrapper" id="wrapper01">
+                <div class="card">
+                    <img src="images/Matara/giragala.jpg">
+                    <div class="info">
+                        <h1>Giragala</h1>
+                        <p>Nestled in the heart of Mirissa Beach, Giragala Village is an ideal spot from which to discover Mirissa. From here, guests can make the most of all that the lively city has to offer. With its convenient location, the property offers
+                            easy access to the city's must-see destinations.</p>
+
+                        <a href="https://goo.gl/maps/BCDhH9NDjybfLF8N9" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/paraviduwa.jpg">
+                    <div class="info">
+                        <h1>Paravi Duwa Temple</h1>
+                        <p>Paravi Duwa Temple is a Buddhist temple situated in Matara. It is a popular Buddhist temple as well as a tourist attraction in Matara. The temple is located in a beautiful island surrounded by the Indian Ocean. A steel bridge connects
+                            the island to the land on the other wide and devotees as well as tourists can easily access the temple. The sheer beauty of the temple attracts people of all faiths towards it. </p>
+
+                        <a href="https://goo.gl/maps/GusjZLVgTj8jVBjBA" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/lakshawatta.jpg">
+                    <div class="info">
+                        <h1>Lakshawatta Beach</h1>
+                        <p> A safe sandy beach break (Lakshawaththa Beach), perfect for beginners and less crowded than Weligama on high days and holidays. Explore these beaches: Weligama Bay, this has the perfect beach breaks for beginners, 15 minutes away,
+                            protected from the wind due to its' natural horseshoe shape. </p>
+
+                        <a href="https://goo.gl/maps/7vMg33oEAZLfRvom7" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/uthpalawanna.jpg">
+                    <div class="info">
+                        <h1>Devinuwara Upulwan Devalaya</h1>
+                        <p>The little town of Devinuwara or the “City of Gods” is located at the most southern edge of the country, about 6.5kms south-east of Matara. Devinuwara is also known as Dondra in English. According to legend Devinuwara was a flourishing
+                            city in the time is King Rawana and is connected to the Indian Epic of Ramayana. </p>
+                        <a href="https://amazinglanka.com/wp/devinuwara-devale/" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://goo.gl/maps/xfccVcPt2AnecyN39" class="btn">Direction</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper" id="wrapper02">
+                <div class="card">
+                    <img src="images/Matara/brownshill.jpg">
+                    <div class="info">
+                        <h1>Brown's Hill</h1>
+                        <p>Brown’s Hill is a hill and is located in Southern, Sri Lanka. The estimate terrain elevation above seal level is 11 metres.</p>
+
+                        <a href="https://www.google.com/maps/place/Brown's+Hill/@5.9431912,80.5416914,14z/data=!3m1!4b1!4m5!3m4!1s0x3ae139271817428d:0x28c3af9bff3a6bc3!8m2!3d5.9431489!4d80.5592011" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/thenavaram.jpg">
+                    <div class="info">
+                        <h1>Tenawaram Temple</h1>
+                        <p>Tenavaram Temple is a Hindu temple situated in Dondra, southern Sri Lanka. The temple complex is also known as “Tevanthurai Kovil” or “Naga-Risa Nila Kovil”. The temple is dedicated to the Hindu God Tenavarai Nayanar, also known
+                            as Upulvan and at its zenith was one of the most celebrated Hindu temple complexes of Sri Lanka. </p>
+                        <a href="https://en.wikipedia.org/wiki/Tenavaram_temple" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Tenavaram+Temple/@5.9270895,80.5861622,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae139a081f46ccb:0xd6027f8a0486992!8m2!3d5.9270842!4d80.5883509" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/polhena.jpg">
+                    <div class="info">
+                        <h1>Polhena Beach</h1>
+                        <p>Polhena beach which is very popular among local tourists is located in close proximity to the Matara city. This is an ideal place for scuba diving, surfing and sunbathing etc. It’s a highly famed destination due to its natural
+                            swimming pool created by coral reef.</p>
+                        <a href="http://wikimapia.org/8354109/Polhena-Beach-in-Matara" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Polhena+Beach/@5.9361621,80.5238959,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae13edc620bad4d:0x6591c62a45627498!8m2!3d5.9363176!4d80.5263073" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/snake.jpg">
+                    <div class="info">
+                        <h1>Sri Lanka Snake Farm</h1>
+                        <p>More of a temporary board for non-venomous, mildly venomous and highly venomous snakes caught from the area than a fully-fledged snake farm which breeds snakes, Snake Farm is a small conservatory cum an Ayurveda treatment centre
+                            for snake poisoning operated by a father and son duo, who have had generations of experience in handling reptiles, especially the ones that can kill you in a whole number of excruciating and exciting ways.</p>
+
+                        <a href="https://www.google.com/maps/place/Sri+Lankan+Snake+Farm/@6.0171548,80.4749527,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae140481dc27af9:0x2d11a8dd35fb28ed!8m2!3d6.0171495!4d80.4771414" class="btn">Direction</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper" id="wrapper03">
+                <div class="card">
+                    <img src="images/Matara/thalalla.jpg">
+                    <div class="info">
+                        <h1>Weligama Beach</h1>
+                        <p> Weligama which literally means ‘sandy village’ is a picturesque bay located along the southern coastal belt of Sri Lanka. There is also an off shore islet where a French Count built his dream house. Weligama is where you will see
+                            the famous stilt fishermen while the area is also well known for beeralu lace making which had been introduced by the Portuguese.</p>
+                        <a href="https://en.wikipedia.org/wiki/Weligama" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Weligama+Beach+House/@5.941677,80.1816628,10.5z/data=!4m8!3m7!1s0x3ae1154807142e35:0x205abca8d2c183a!5m2!4m1!1i2!8m2!3d5.9738455!4d80.4331097" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/weherahena.jpg">
+                    <div class="info">
+                        <h1>Weherahena Poorwaramaya</h1>
+                        <p> Weherahena ( Veherahena) is popular temple among the buddhist pilgrims. Although there is nothing of historical significance, the story of the temple is quite interesting. In addition, the temple is said be the largest and the
+                            first tunnel temple in the world.The even though it is said this temple was adobe to arhath bikkus in the ancient Sri Lanka, the story of the temple starts during the early part of the 20th centaury.
+                        </p>
+                        <a href="https://amazinglanka.com/wp/weherahena/" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/Weherahena+Poorwarama+Rajamaha+Viharaya+%E0%B7%80%E0%B7%99%E0%B7%84%E0%B7%99%E0%B6%BB%E0%B7%84%E0%B7%9A%E0%B6%B1+%E0%B6%B4%E0%B7%96%E0%B6%BB%E0%B7%8A%E0%B7%80%E0%B7%8F%E0%B6%BB%E0%B7%8F%E0%B6%B8+%E0%B6%BB%E0%B6%A2%E0%B6%B8%E0%B7%84%E0%B7%8F+%E0%B7%80%E0%B7%92%E0%B7%84%E0%B7%8F%E0%B6%BB%E0%B6%BA./@5.9530433,80.5730973,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae138e51ec0dfe5:0x7a342c012d9cdb13!8m2!3d5.953038!4d80.575286"
+                            class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/madiha.jpg">
+                    <div class="info">
+                        <h1>Madiha Beach</h1>
+                        <p>Madiha Beach is situated in the Matara district, approximately 4 km away from Matara city. It is one of the hottest surf destinations in the area. Madiha Beach also boasts of a great turtle watching point apart from its waves,
+                            ideal for surfing. Madiha Beach consists of beautifully turquoise blue waters with coral reefs within it.</p>
+
+                        <a href="https://www.google.com/maps/place/Madiha+Beach/@5.9361389,80.5136812,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae13ee42b00bf13:0xaa62b86b03d9ed9a!8m2!3d5.9361336!4d80.5158699" class="btn">Direction</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Matara/church.jpg">
+                    <div class="info">
+                        <h1>The Shrine of Our Lady of Matara</h1>
+                        <p> The Shrine of Our Lady of Matara is a Roman Catholic church situated in Matara. This Roman Catholic church is devoted to the Virgin Mary. A statue of Virgin Mary holding baby Jesus can be seen at the church which is claimed to
+                            be about 400 years old. </p>
+                        <a href="https://en.wikipedia.org/wiki/Shrine_of_Our_Lady_of_Matara" class="btn">More Details</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com/maps/place/The+Shrine+of+Our+Lady+of+Matara/@5.9432292,80.5497875,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae13929ca5b8ea3:0x46ac65daa46144c2!8m2!3d5.9432239!4d80.5519762" class="btn">Direction</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--district outher places cards end-->
+
+
+        <!--Footer-->
+        <div class="footer-maindiv" style="padding-top: 60px;">
+
+            <div class="footer">
+
+                <div class="inner-footer">
+
+                    <div class="footer-items">
+                        <a href="home.html" class="logo"><img src="images/district_logo/2ndlogo.png" style="width: 200px;" alt=""></a>
+                        <p>
+                            Travel freely. Travel to places you haven't seen. Enjoy your life. <b>Find Sri Lanka's Aesthetics.</b> Join us to find out about your unseen destinations.
+                        </p>
+
+                    </div>
+
+                    <div class="footer-items">
+                        <h1>Quick Links</h1>
+                        <div class="border"></div>
+
+                        <ul>
+                            <a href="district.html">
+                                <li>District</li>
+                            </a>
+                            <a href="photo_gallery.html">
+                                <li>Photo Gallery</li>
+                            </a>
+                            <a href="our_service.html">
+                                <li>Our Services</li>
+                            </a>
+                            <a href="php/contact_us.php">
+                                <li>Contact Us</li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-items">
+                        <h1>Main Districts</h1>
+                        <div class="border"></div>
+
+                        <ul>
+                            <a href="kandy.html">
+                                <li>Kandy</li>
+                            </a>
+                            <a href="colombo.html">
+                                <li>Colombo</li>
+                            </a>
+                            <a href="galle.html">
+                                <li>Galle</li>
+                            </a>
+                            <a href="jaffna.html">
+                                <li>Jaffna</li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-items">
+                        <h1>Contact Us</h1>
+                        <div class="border"></div>
+
+                        <ul>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>No.25,Pitipana,Homagama,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Lanaka
+                            </li><br>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>0094774521896
+                            </li><br>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:info@trapotour.com">info@trapotour.com</a>
+                            </li>
+                        </ul>
+                        <div class="social-media">
+                            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    Copyright &copy; Trapo Tour 2020. All rights reserved.
+                </div>
+            </div>
+        </div>
+        <!--footer end-->
+
+    </body>
+
+</html>
