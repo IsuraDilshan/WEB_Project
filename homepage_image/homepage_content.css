@@ -62,7 +62,7 @@
 .note04{
     /*border: 1px solid blue;*/
     width: 100%;
-    height: 800px;
+    height: 460px;
 }
 
 .ytvideo-card{
@@ -99,3 +99,149 @@
   /*border: 1px solid blue;*/
   padding-top: 50px;
 }
+
+.note05{
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 975px;
+  
+}
+
+.covid-head{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 140px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+}
+
+.covid-con1{
+  /*border: 1px solid blue;*/
+  width: 40%;
+  height: 400px;
+  float: left;
+}
+
+#image01{
+  width: 80%;
+  height: 75%;
+  /*border: 1px solid black;*/
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#image01 img{
+  border-radius: 25px;
+  box-shadow: 5px 16px 20px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  background-color: rgba(239, 240, 240, 0.8);
+  border: 1px solid rgb(190, 190, 190);
+}
+
+
+.covid-con2{
+  /*border: 1px solid yellow;*/
+  width: 60%;
+  height: 400px;
+  float: left;
+}
+
+#covid-con2-details{
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(41, 43, 43);
+  width: 90%;
+  height: 290px;
+  /*border: 1px solid blue;*/
+}
+
+.covid-con3{
+  /*border: 1px solid rgb(202, 5, 186);*/
+  width: 60%;
+  height: 400px;
+  float: left;
+}
+
+#covid-con3-details{
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(41, 43, 43);
+  width: 90%;
+  height: 348px;
+  /*border: 1px solid blue;*/
+}
+
+.covid-con4{
+  /*border: 1px solid rgb(1, 97, 17);*/
+  width: 40%;
+  height: 400px;
+  float: left;
+}
+
+#image04{
+  width: 80%;
+  height: 75%;
+  /*border: 1px solid black;*/
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#image04 img{
+  border-radius: 25px;
+  box-shadow: 5px 16px 20px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  background-color: rgba(239, 240, 240, 0.8);
+  border: 1px solid rgb(190, 190, 190);
+}
+
+#covid-button{
+  /*border: 1px solid rgb(12, 247, 51);*/
+  width: 100%;
+  height: 150px;
+}
+#covid-more{
+  margin-left: 40%;
+}
+
+.covid-button {
+  border-radius: 4px;
+  background-color: #f52a2a;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 19px;
+  padding: 11px;
+  width: 95px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.covid-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.covid-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.covid-button:hover span {
+  padding-right: 25px;
+}
+
+.covid-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
