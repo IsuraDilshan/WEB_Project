@@ -1,0 +1,46 @@
+.dispagecon{
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 830px;
+    background-color: #ddd;
+}
+
+.district-wadana{
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 130px;
+    font-size: 40px;
+    font-family: 'Satisfy', cursive;
+}
+
+.district-wadana p{
+    
+    margin-left: 100px;
+}
+
+.district-wadana2{
+    /*border: 2px solid rgb(11, 163, 184);*/
+    width: 50%;
+    height: 700px;
+    float: left;
+}
+.district-wadana3{
+    /*border: 2px solid rgb(225, 250, 5);*/
+    width: 50%;
+    height: 700px;
+    float: left;
+}
+
+#district-link{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-left: 220px;
+}
+
+#district-link:hover{
+    color: #ff9800;
+    transition: 0.3s;
+}
+
