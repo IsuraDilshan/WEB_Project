@@ -7,7 +7,7 @@ body{
     color: white;
     margin: 30px 10px 20px;
     text-shadow: 2px 2px 5px red;
-    ont-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     /*border: 1px solid red;*/
 }
 .imgal-text
@@ -35,8 +35,7 @@ body{
     height: 200px;
     padding: 2px;
     transition: 1s;
-    box-shadow: 0 2px 3px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(7, 0, 0);
-    
+    box-shadow: 0 2px 3px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(7, 0, 0);   
 }
 .gallery img:hover
 {
@@ -50,7 +49,7 @@ body{
 .left
 {
     float: left;
-    
+    margin-left: 50px;
 }
 
 .right
@@ -60,14 +59,12 @@ body{
     margin-top: 20px;
     /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
     font-family: 'Ubuntu', sans-serif;
-    color: white;
-    
-    
+    color: white;  
 }
 .sizes
 {
     width: 100px;
-    height: 100px;
+    height: 110px;
 }
 .left img:hover
 {
