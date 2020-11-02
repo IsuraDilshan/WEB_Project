@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <style>
+            body {
+              background-image: url("Photo Gallery/images/download.jpg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-attachment: fixed;              
+            }
+            </style>
+        
+       <title>GALLERY</title>
+       <link rel="stylesheet" href="website_navbar.css">
+       <link rel="stylesheet" type="text/css" href="Photo Gallery/css/style.css">
+       <link rel="stylesheet" type="text/css" href="Photo Gallery/css/lightbox.min.css">
+       <link rel="stylesheet" type="text/css" href="Photo Gallery/website_footer.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="Photo Gallery/js/lightbox-plus-jquery.min.js"></script>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+         
+       
+      <div class="left">
+        <a href="home.html"><img class="sizes" src="Photo Gallery/mainlogo.png"> </a>
+      </div>
+
+      <div class="right">
+        <a href="home.html"><h3>HOME</h3></a>
+      </div>
+
+      <br>
+      <br>
+       
+      <h1 class="imgal">Image Gallery</h1>
+
+      <h3 class="imgal-text"><p id="imggal-para">Be universal in your love. You will see the universe to be the picture of your own being.</p></h3>
+
+            
+                   <!-- <div class="gallery">
+                    <a href="Photo Gallery/images/Driving through the tea plantations surrounding the Knuckles Mountain Range.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Driving through the tea plantations surrounding the Knuckles Mountain Range.jpg"></a>
+                    <a href="Photo Gallery/images/Elephant spotting at Minneriya National Park.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Elephant spotting at Minneriya National Park.jpg"></a>
+                    <a href="Photo Gallery/images/Ella (2).jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ella (2).jpg"></a>
+                    <a href="Photo Gallery/images/Afternoon swims at Unawatuna Beach .jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Afternoon swims at Unawatuna Beach .jpg"></a>
+                    
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Badulla.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Badulla.jpg"></a>
+                    <a href="Photo Gallery/images/Exploring the famous Temple of the Tooth in Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Exploring the famous Temple of the Tooth in Kandy.jpg"></a>
+                    <a href="Photo Gallery/images/Ella.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ella.jpg"></a>
+                    <a href="Photo Gallery/images/Exploring the Knuckles Mountain Range,.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Exploring the Knuckles Mountain Range,.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/First light over the Kandy Mountain Range.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/First light over the Kandy Mountain Range.jpg"></a>
+                    <a href="Photo Gallery/images/Elephants-Yala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Elephants-Yala.jpg"></a>
+                    <a href="Photo Gallery/images/Galle-1.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Galle-1.jpg"></a>
+                    <a href="Photo Gallery/images/Hanging out on the train ride from Colombo to Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Hanging out on the train ride from Colombo to Kandy.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Hatton.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Hatton.jpg"></a>
+                    <a href="Photo Gallery/images/Hikkaduwa.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Hikkaduwa.jpg"></a>
+                    <a href="Photo Gallery/images/Home for the night at Pidurangala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Home for the night at Pidurangala.jpg"></a>
+                    <a href="Photo Gallery/images/Galle.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Galle.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Kaluthara.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Kaluthara.jpg"></a>
+                    <a href="Photo Gallery/images/Mathara.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Mathara.jpg"></a>
+                    <a href="Photo Gallery/images/vitalii-tkachenko-_k6tPGUQ0Vs-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/vitalii-tkachenko-_k6tPGUQ0Vs-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Yala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Yala.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Sigiriya.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sigiriya.jpg"></a>
+                    <a href="Photo Gallery/images/Galle-3.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Galle-3.jpg"></a>
+                    <a href="Photo Gallery/images/Watching the sunrise over the mountains in Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Watching the sunrise over the mountains in Kandy.jpg"></a>
+                    <a href="Photo Gallery/images/Visiting the Mackwood Tea Plantations.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Visiting the Mackwood Tea Plantations.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Nine Arch Bridge.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Nine Arch Bridge.jpg"></a>
+                    <a href="Photo Gallery/images/Colombo.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Colombo.jpg"></a>
+                    <a href="Photo Gallery/images/Mirissa.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Mirissa.jpg"></a>
+                    <a href="Photo Gallery/images/Watching the fire walkers during a cultural show in Kandy-1.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Watching the fire walkers during a cultural show in Kandy-1.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Pinnawala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Pinnawala.jpg"></a>
+                    <a href="Photo Gallery/images/Temple Of The Tooth.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Temple Of The Tooth.jpg"></a>
+                    <a href="Photo Gallery/images/Unawatuna.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Unawatuna.jpg"></a>
+                    <a href="Photo Gallery/images/View fo Sigiriya In Pidurangala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/View fo Sigiriya In Pidurangala.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Views out of the window on the train to Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Views out of the window on the train to Kandy.jpg"></a>
+                    <a href="Photo Gallery/images/Wandering through local villages in Matale .jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Wandering through local villages in Matale .jpg"></a>
+                    <a href="Photo Gallery/images/Nuwara Eliya.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Nuwara Eliya.jpg"></a>
+                    <a href="Photo Gallery/images/Watching the fire walkers during a cultural show in Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Watching the fire walkers during a cultural show in Kandy.jpg"></a> 
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/tharaka-jayasuriya-m3ftU4Llk_w-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/tharaka-jayasuriya-m3ftU4Llk_w-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Waterfall discoveries on the drive from Nuwera Eliya to Kandy .jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Waterfall discoveries on the drive from Nuwera Eliya to Kandy .jpg"></a>
+                    <a href="Photo Gallery/images/Mirissa-1.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Mirissa-1.jpg"></a>
+                    <a href="Photo Gallery/images/Nine Arch Bridge (1).jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Nine Arch Bridge (1).jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Adams Peak – The UNESCO World Heritage Site.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Adams Peak – The UNESCO World Heritage Site.jpg"></a>
+                    <a href="Photo Gallery/images/agnieszka-kowalczyk-trGtO5_lmbo-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/agnieszka-kowalczyk-trGtO5_lmbo-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/agnieszka-kowalczyk-WlUXE_fM0hk-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/agnieszka-kowalczyk-WlUXE_fM0hk-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Anuradhapura – See The Bodhi Tree.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Anuradhapura – See The Bodhi Tree.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Arugam Bay – Pristine Beaches.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Arugam Bay – Pristine Beaches.jpg"></a>
+                    <a href="Photo Gallery/images/Bahiravokanda Vihara Buddha Statue – Gigantic Architecture.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Bahiravokanda Vihara Buddha Statue – Gigantic Architecture.jpg"></a>
+                    <a href="Photo Gallery/images/Beira Lake – The Surreal Lake.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Beira Lake – The Surreal Lake.jpg"></a>
+                    <a href="Photo Gallery/images/brian-kyed-bsurcYWZIEo-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/brian-kyed-bsurcYWZIEo-unsplash.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Bentota Beach – Beautiful Sunrise And Blue Waters.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Bentota Beach – Beautiful Sunrise And Blue Waters.jpg"></a>
+                    <a href="Photo Gallery/images/Colombo – Visit The Bustling City.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Colombo – Visit The Bustling City.jpg"></a>
+                    <a href="Photo Gallery/images/Commonwealth War Cemetery – For The Warriors.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Commonwealth War Cemetery – For The Warriors.jpg"></a>
+                    <a href="Photo Gallery/images/Dambulla Cave Temple.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Dambulla Cave Temple.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Dondra Lighthouse – Instagram Worthy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Dondra Lighthouse – Instagram Worthy.jpg"></a>
+                    <a href="Photo Gallery/images/Gal Oya Lodge Sri Lanka.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Gal Oya Lodge Sri Lanka.jpg"></a>
+                    <a href="Photo Gallery/images/Gal Viharaya – Know The Ancient History.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Gal Viharaya – Know The Ancient History.jpg"></a>
+                    <a href="Photo Gallery/images/Galle Fort.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Galle Fort.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Great western.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Great western.jpg"></a>
+                    <a href="Photo Gallery/images/Gangaramaya seema malaka temple in colombo.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Gangaramaya seema malaka temple in colombo.jpg"></a>
+                    <a href="Photo Gallery/images/Horton Plains National Park – Of Lakes And Greenery.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Horton Plains National Park – Of Lakes And Greenery.jpg"></a>
+                    <a href="Photo Gallery/images/Isurumuniya rock temple in Anuradhapura.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Isurumuniya rock temple in Anuradhapura.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Jaffna – Explore The Historical Architectures.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Jaffna – Explore The Historical Architectures.jpg"></a>
+                    <a href="Photo Gallery/images/Kandalama – The Surreal Village.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Kandalama – The Surreal Village.jpg"></a>
+                    <a href="Photo Gallery/images/Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Kandy.jpg"></a>
+                    <a href="Photo Gallery/images/Kelaniya Raja Maha Vihara – For Serenity.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Kelaniya Raja Maha Vihara – For Serenity.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Surfer surfing at sunset at Mirissa Beach.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Surfer surfing at sunset at Mirissa Beach.jpg"></a>
+                    <a href="Photo Gallery/images/MeditationBhikkhu.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/MeditationBhikkhu.jpg"></a>
+                    <a href="Photo Gallery/images/1-Mirissa.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/1-Mirissa.jpg"></a>
+                    <a href="Photo Gallery/images/National Museum Of Colombo – Know The History.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/National Museum Of Colombo – Know The History.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Nissanka Malla's Palace at Polonnaruwa.webp"data-lightbox="mygallery"><img src="Photo Gallery/images/Nissanka Malla's Palace at Polonnaruwa.webp"></a>
+                    <a href="Photo Gallery/images/Nuwara Eliya.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Nuwara Eliya.jpg"></a>
+                    <a href="Photo Gallery/images/Perandeniya Botanical Gardens – See The Flowers Blooming.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Perandeniya Botanical Gardens – See The Flowers Blooming.jpg"></a>
+                    <a href="Photo Gallery/images/Polonnaruwa – The Ancient Ruins.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Polonnaruwa – The Ancient Ruins.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Polonnaruwa.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Polonnaruwa.jpg"></a>
+                    <a href="Photo Gallery/images/Ravana Falls – Explore The Surreal Beauty.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ravana Falls – Explore The Surreal Beauty.jpg"></a>
+                    <a href="Photo Gallery/images/rowan-heuvel-U6t80TWJ1DM-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/rowan-heuvel-U6t80TWJ1DM-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Ruwanwelisaya – A Sacred Buddhist Site.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ruwanwelisaya – A Sacred Buddhist Site.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Sigiriya Museum – Visit The Historical Place.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sigiriya Museum – Visit The Historical Place.jpg"></a>
+                    <a href="Photo Gallery/images/Yala National Park – Amidst The Wildlife.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Yala National Park – Amidst The Wildlife.jpg"></a>
+                    <a href="Photo Gallery/images/Sri Lanka Fisherman.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sri Lanka Fisherman.jpg"></a>
+                    <a href="Photo Gallery/images/Sunrise over Adam's Peak.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sunrise over Adam's Peak.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Tangalle.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Tangalle.jpg"></a>
+                    <a href="Photo Gallery/images/Tawalantenne – Ideal Road Trip Location.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Tawalantenne – Ideal Road Trip Location.jpg"></a>
+                    <a href="Photo Gallery/images/Tea factories are omnipresent in central Sri Lanka.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Tea factories are omnipresent in central Sri Lanka.jpg"></a>
+                    <a href="Photo Gallery/images/Tissamaharama – Picture Worthy Place.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Tissamaharama – Picture Worthy Place.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/tomas-malik-UL23OjMTHXE-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/tomas-malik-UL23OjMTHXE-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Udawalawe National Park – With Wild Animals.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Udawalawe National Park – With Wild Animals.jpg"></a>
+                    <a href="Photo Gallery/images/Ulpotha – Land Of Ayurveda.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ulpotha – Land Of Ayurveda.jpg"></a>
+                    <a href="Photo Gallery/images/Trincomalee – The Temple City.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Trincomalee – The Temple City.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Unawatuna Beach – Beautiful Beaches.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Unawatuna Beach – Beautiful Beaches.jpg"></a>
+                    <a href="Photo Gallery/images/vitalii-tkachenko-lQ9lHXL73e8-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/vitalii-tkachenko-lQ9lHXL73e8-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Yala National Park.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Yala National Park.jpg"></a>
+                    <a href="Photo Gallery/images/Sinharaja Forest Reserve – Tropical Beauty.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sinharaja Forest Reserve – Tropical Beauty.jpg"></a>
+                  
+                  
+                  </div> -->
+
+                 
+
+                  <div class="gallery">
+                    <a href="Photo Gallery/images/Driving through the tea plantations surrounding the Knuckles Mountain Range.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Driving through the tea plantations surrounding the Knuckles Mountain Range.jpg"></a>
+                    <a href="Photo Gallery/images/Elephant spotting at Minneriya National Park.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Elephant spotting at Minneriya National Park.jpg"></a>
+                    <a href="Photo Gallery/images/Ella (2).jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ella (2).jpg"></a>
+                    <a href="Photo Gallery/images/Afternoon swims at Unawatuna Beach .jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Afternoon swims at Unawatuna Beach .jpg"></a>
+                    
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Badulla.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Badulla.jpg"></a>
+                    <a href="Photo Gallery/images/Exploring the famous Temple of the Tooth in Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Exploring the famous Temple of the Tooth in Kandy.jpg"></a>
+                    <a href="Photo Gallery/images/Ella.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ella.jpg"></a>
+                    <a href="Photo Gallery/images/Exploring the Knuckles Mountain Range,.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Exploring the Knuckles Mountain Range,.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/First light over the Kandy Mountain Range.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/First light over the Kandy Mountain Range.jpg"></a>
+                    <a href="Photo Gallery/images/Elephants-Yala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Elephants-Yala.jpg"></a>
+                    <a href="Photo Gallery/images/Galle-1.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Galle-1.jpg"></a>
+                    <a href="Photo Gallery/images/Hanging out on the train ride from Colombo to Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Hanging out on the train ride from Colombo to Kandy.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Hatton.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Hatton.jpg"></a>
+                    <a href="Photo Gallery/images/Hikkaduwa.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Hikkaduwa.jpg"></a>
+                    <a href="Photo Gallery/images/Home for the night at Pidurangala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Home for the night at Pidurangala.jpg"></a>
+                    <a href="Photo Gallery/images/Galle.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Galle.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Kaluthara.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Kaluthara.jpg"></a>
+                    <a href="Photo Gallery/images/Mathara.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Mathara.jpg"></a>
+                    <a href="Photo Gallery/images/vitalii-tkachenko-_k6tPGUQ0Vs-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/vitalii-tkachenko-_k6tPGUQ0Vs-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Yala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Yala.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Sigiriya.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sigiriya.jpg"></a>
+                    <a href="Photo Gallery/images/Galle-3.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Galle-3.jpg"></a>
+                    <a href="Photo Gallery/images/Watching the sunrise over the mountains in Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Watching the sunrise over the mountains in Kandy.jpg"></a>
+                    <a href="Photo Gallery/images/Visiting the Mackwood Tea Plantations.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Visiting the Mackwood Tea Plantations.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Nine Arch Bridge.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Nine Arch Bridge.jpg"></a>
+                    <a href="Photo Gallery/images/Colombo.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Colombo.jpg"></a>
+                    <a href="Photo Gallery/images/Mirissa.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Mirissa.jpg"></a>
+                    <a href="Photo Gallery/images/Watching the fire walkers during a cultural show in Kandy-1.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Watching the fire walkers during a cultural show in Kandy-1.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Pinnawala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Pinnawala.jpg"></a>
+                    <a href="Photo Gallery/images/Temple Of The Tooth.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Temple Of The Tooth.jpg"></a>
+                    <a href="Photo Gallery/images/Unawatuna.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Unawatuna.jpg"></a>
+                    <a href="Photo Gallery/images/View fo Sigiriya In Pidurangala.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/View fo Sigiriya In Pidurangala.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Views out of the window on the train to Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Views out of the window on the train to Kandy.jpg"></a>
+                    <a href="Photo Gallery/images/Wandering through local villages in Matale .jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Wandering through local villages in Matale .jpg"></a>
+                    <a href="Photo Gallery/images/Nuwara Eliya.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Nuwara Eliya.jpg"></a>
+                    <a href="Photo Gallery/images/Watching the fire walkers during a cultural show in Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Watching the fire walkers during a cultural show in Kandy.jpg"></a> 
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/tharaka-jayasuriya-m3ftU4Llk_w-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/tharaka-jayasuriya-m3ftU4Llk_w-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Waterfall discoveries on the drive from Nuwera Eliya to Kandy .jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Waterfall discoveries on the drive from Nuwera Eliya to Kandy .jpg"></a>
+                    <a href="Photo Gallery/images/Mirissa-1.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Mirissa-1.jpg"></a>
+                    <a href="Photo Gallery/images/Nine Arch Bridge (1).jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Nine Arch Bridge (1).jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Adams Peak – The UNESCO World Heritage Site.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Adams Peak – The UNESCO World Heritage Site.jpg"></a>
+                    <a href="Photo Gallery/images/agnieszka-kowalczyk-trGtO5_lmbo-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/agnieszka-kowalczyk-trGtO5_lmbo-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/agnieszka-kowalczyk-WlUXE_fM0hk-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/agnieszka-kowalczyk-WlUXE_fM0hk-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Anuradhapura – See The Bodhi Tree.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Anuradhapura – See The Bodhi Tree.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Arugam Bay – Pristine Beaches.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Arugam Bay – Pristine Beaches.jpg"></a>
+                    <a href="Photo Gallery/images/Bahiravokanda Vihara Buddha Statue – Gigantic Architecture.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Bahiravokanda Vihara Buddha Statue – Gigantic Architecture.jpg"></a>
+                    <a href="Photo Gallery/images/Beira Lake – The Surreal Lake.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Beira Lake – The Surreal Lake.jpg"></a>
+                    <a href="Photo Gallery/images/brian-kyed-bsurcYWZIEo-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/brian-kyed-bsurcYWZIEo-unsplash.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Bentota Beach – Beautiful Sunrise And Blue Waters.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Bentota Beach – Beautiful Sunrise And Blue Waters.jpg"></a>
+                    <a href="Photo Gallery/images/Colombo – Visit The Bustling City.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Colombo – Visit The Bustling City.jpg"></a>
+                    <a href="Photo Gallery/images/Commonwealth War Cemetery – For The Warriors.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Commonwealth War Cemetery – For The Warriors.jpg"></a>
+                    <a href="Photo Gallery/images/Dambulla Cave Temple.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Dambulla Cave Temple.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Dondra Lighthouse – Instagram Worthy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Dondra Lighthouse – Instagram Worthy.jpg"></a>
+                    <a href="Photo Gallery/images/Gal Oya Lodge Sri Lanka.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Gal Oya Lodge Sri Lanka.jpg"></a>
+                    <a href="Photo Gallery/images/Gal Viharaya – Know The Ancient History.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Gal Viharaya – Know The Ancient History.jpg"></a>
+                    <a href="Photo Gallery/images/Galle Fort.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Galle Fort.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Great western.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Great western.jpg"></a>
+                    <a href="Photo Gallery/images/Gangaramaya seema malaka temple in colombo.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Gangaramaya seema malaka temple in colombo.jpg"></a>
+                    <a href="Photo Gallery/images/Horton Plains National Park – Of Lakes And Greenery.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Horton Plains National Park – Of Lakes And Greenery.jpg"></a>
+                    <a href="Photo Gallery/images/Isurumuniya rock temple in Anuradhapura.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Isurumuniya rock temple in Anuradhapura.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Jaffna – Explore The Historical Architectures.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Jaffna – Explore The Historical Architectures.jpg"></a>
+                    <a href="Photo Gallery/images/Kandalama – The Surreal Village.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Kandalama – The Surreal Village.jpg"></a>
+                    <a href="Photo Gallery/images/Kandy.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Kandy.jpg"></a>
+                    <a href="Photo Gallery/images/Kelaniya Raja Maha Vihara – For Serenity.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Kelaniya Raja Maha Vihara – For Serenity.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Surfer surfing at sunset at Mirissa Beach.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Surfer surfing at sunset at Mirissa Beach.jpg"></a>
+                    <a href="Photo Gallery/images/MeditationBhikkhu.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/MeditationBhikkhu.jpg"></a>
+                    <a href="Photo Gallery/images/1-Mirissa.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/1-Mirissa.jpg"></a>
+                    <a href="Photo Gallery/images/National Museum Of Colombo – Know The History.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/National Museum Of Colombo – Know The History.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Nissanka Malla's Palace at Polonnaruwa.webp"data-lightbox="mygallery"><img src="Photo Gallery/images/Nissanka Malla's Palace at Polonnaruwa.webp"></a>
+                    <a href="Photo Gallery/images/Nuwara Eliya.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Nuwara Eliya.jpg"></a>
+                    <a href="Photo Gallery/images/Perandeniya Botanical Gardens – See The Flowers Blooming.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Perandeniya Botanical Gardens – See The Flowers Blooming.jpg"></a>
+                    <a href="Photo Gallery/images/Polonnaruwa – The Ancient Ruins.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Polonnaruwa – The Ancient Ruins.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Polonnaruwa.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Polonnaruwa.jpg"></a>
+                    <a href="Photo Gallery/images/Ravana Falls – Explore The Surreal Beauty.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ravana Falls – Explore The Surreal Beauty.jpg"></a>
+                    <a href="Photo Gallery/images/rowan-heuvel-U6t80TWJ1DM-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/rowan-heuvel-U6t80TWJ1DM-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Ruwanwelisaya – A Sacred Buddhist Site.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ruwanwelisaya – A Sacred Buddhist Site.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Sigiriya Museum – Visit The Historical Place.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sigiriya Museum – Visit The Historical Place.jpg"></a>
+                    <a href="Photo Gallery/images/Yala National Park – Amidst The Wildlife.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Yala National Park – Amidst The Wildlife.jpg"></a>
+                    <a href="Photo Gallery/images/Sri Lanka Fisherman.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sri Lanka Fisherman.jpg"></a>
+                    <a href="Photo Gallery/images/Sunrise over Adam's Peak.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sunrise over Adam's Peak.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Tangalle.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Tangalle.jpg"></a>
+                    <a href="Photo Gallery/images/Tawalantenne – Ideal Road Trip Location.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Tawalantenne – Ideal Road Trip Location.jpg"></a>
+                    <a href="Photo Gallery/images/Tea factories are omnipresent in central Sri Lanka.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Tea factories are omnipresent in central Sri Lanka.jpg"></a>
+                    <a href="Photo Gallery/images/Tissamaharama – Picture Worthy Place.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Tissamaharama – Picture Worthy Place.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/tomas-malik-UL23OjMTHXE-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/tomas-malik-UL23OjMTHXE-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Udawalawe National Park – With Wild Animals.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Udawalawe National Park – With Wild Animals.jpg"></a>
+                    <a href="Photo Gallery/images/Ulpotha – Land Of Ayurveda.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Ulpotha – Land Of Ayurveda.jpg"></a>
+                    <a href="Photo Gallery/images/Trincomalee – The Temple City.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Trincomalee – The Temple City.jpg"></a>
+                    <br>
+                    <br>
+                    <a href="Photo Gallery/images/Unawatuna Beach – Beautiful Beaches.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Unawatuna Beach – Beautiful Beaches.jpg"></a>
+                    <a href="Photo Gallery/images/vitalii-tkachenko-lQ9lHXL73e8-unsplash.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/vitalii-tkachenko-lQ9lHXL73e8-unsplash.jpg"></a>
+                    <a href="Photo Gallery/images/Yala National Park.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Yala National Park.jpg"></a>
+                    <a href="Photo Gallery/images/Sinharaja Forest Reserve – Tropical Beauty.jpg"data-lightbox="mygallery"><img src="Photo Gallery/images/Sinharaja Forest Reserve – Tropical Beauty.jpg"></a>
+                  
+                  
+                  </div> -->
+
+                <br>
+              
+        
+
+
+          <!--Footer-->
+       <div class="footer-maindiv" >
+
+        <div class="footer">
+
+          <div class="inner-footer">
+  
+              <div class="footer-items">
+                  <a href="home.html" class="logo"><img src="Photo Gallery/2ndlogo.png" style="width: 200px;" alt=""></a>
+                  <p>
+                      Travel freely. Travel to places you haven't seen. Enjoy your life. <b>Find Sri Lanka's Aesthetics.</b> Join us to find out about your unseen destinations.
+                  </p>
+  
+              </div>
+  
+              <div class="footer-items">
+                  <h1>Quick Links</h1>
+                  <div class="border"></div>
+  
+                  <ul>
+                      <a href="district.html"><li>District</li></a>
+                      <a href="Photo_gallery.html"><li>Photo Gallery</li></a>
+                      <a href="our_service.html"><li>Our Services</li></a>
+                      <a href="php/contact_us.php"><li>Contact Us</li></a>
+                  </ul>
+   
+               </div>
+  
+               <div class="footer-items">
+                  <h1>Main Districts</h1>
+                  <div class="border"></div>
+  
+                  <ul>
+                      <a href="kandy.html"><li>Kandy</li></a>
+                      <a href="colombo.html"><li>Colombo</li></a>
+                      <a href="galle.html"><li>Galle</li></a>
+                      <a href="jaffna.html"><li>Jaffna</li></a>
+                  </ul>
+   
+               </div>
+  
+               <div class="footer-items">
+                  <h1>Contact Us</h1>
+                  <div class="border"></div>
+  
+                  <ul>
+                      <li><i class="fa fa-map-marker" aria-hidden="true"></i>No.25,Pitipana,Homagama,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri Lanaka
+                      </li><br>
+                      <li><i class="fa fa-phone" aria-hidden="true"></i>0094774521896
+                      </li><br>
+                      <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:info@trapotour.com">info@trapotour.com</a>
+                      </li>
+                  </ul>
+                  <div class="social-media">
+                      <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                  </div>
+   
+               </div>
+  
+          </div>
+          <div class="footer-bottom">
+              Copyright &copy; Trapo Tour 2020. All rights reserved.
+          </div>
+        </div>  
+      </div>
+      <!--footer end-->
+                
+           
+    </body>
+</html> 
