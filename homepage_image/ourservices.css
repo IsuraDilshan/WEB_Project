@@ -1,0 +1,171 @@
+.service_main{
+    width: 100%;
+    height: 880px;
+    /*border: 1px solid black;*/
+}
+
+#service-head{
+    width: 100%;
+    height: 100px;
+    /*border: 1px solid red;*/
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+}
+
+#service-head p{
+    padding-top: 10px;
+    color: rgb(70, 79, 141);
+}
+
+#service-head2{
+    width: 100%;
+    height: 150px;
+    /*border: 1px solid yellow;*/
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+#service-head2 p{
+    padding-top: 30px;
+}
+
+.service-con1{
+    /*border: 1px solid blue;*/
+    width: 25%;
+    height: 250px;
+    float: left;
+}
+
+.service-con1 p{
+    padding-top: 40px;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.service-con2{
+    /*border: 1px solid red;*/
+    width: 75%;
+    height: 250px;
+    float: left;
+}
+
+.service-con2 p{
+    padding-top: 100px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+
+
+
+
+
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 380px;
+}
+.service-container .service-box{
+    position: relative;
+    width: 350px;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 20px;
+    width: 350px;
+    height: 330px;
+    overflow: hidden;
+    text-align: center;
+    /*border: 1px solid yellow;*/
+    margin-left: 60px;
+    float: left;
+}
+.service-container .service-box::before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(225,225,225,.2);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.service-container .service-box .service-icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.service-container .service-box:nth-child(1) .service-icon{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+.service-container .service-box:nth-child(1):hover .service-icon{
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+.service-container .service-box:nth-child(2) .service-icon{
+    box-shadow: 0 0 0 0 #23e623;
+    background: #23e623;
+}
+.service-container .service-box:nth-child(2):hover .service-icon{
+    box-shadow: 0 0 0 400px #23e623;
+}
+
+.service-container .service-box:nth-child(3) .service-icon{
+    box-shadow: 0 0 0 0 #2196f3;
+    background: #2196f3;
+}
+.service-container .service-box:nth-child(3):hover .service-icon{
+    box-shadow: 0 0 0 400px #2196f3;
+}
+
+.service-container .service-box .service-content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.service-container .service-box:hover .service-content{
+    color: #fff;
+}
+
+.service-container .service-box .service-content h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.service-container .service-box .service-content p{
+    margin: 0;
+    padding: 0;
+}
+
+.service-container .service-box .service-content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
