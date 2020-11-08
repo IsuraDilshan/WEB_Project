@@ -1,22 +1,4 @@
-<?php 
-$message="";
-if(count($_POST)>0) {
-	$conn = mysqli_connect("localhost","sriarana_trapo","NSBMply20.1SE","sriarana_trapotour");
-	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	}
-	$sql = "INSERT INTO tourists (image, firstName, lastName, username, password, gender, email, mobile, country) VALUES ('" . $_POST["image"] . "','" . $_POST["fname"] . "','" . $_POST["lname"] . "','" . $_POST["username"] . "','" . $_POST["password"] . "','" . $_POST["gender"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["country"] . "')";
 
-	if ($conn->query($sql) === TRUE) {
-		echo '<script>alert("New record created successfully")</script>';
-    } 
-    else {
-		echo '<script>alert("Username already use or Something went wrong")</script>';
-	  }
-	  
-	  $conn->close();
-}
-?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -439,7 +421,7 @@ fieldset {
           <label>Your Image(Optional)</label>
           <input type="hidden" name="size" value="1000000">
   	    <div>
-  	        <input type="file" name="image" tabindex="10">
+  	        <input type="file" name="file1" tabindex="10">
   	    </div>
           
           <br>
@@ -451,4 +433,47 @@ fieldset {
         </form>
     </div>
 </body>
+<?php 
+$message="";
+if(count($_POST)>0) {
+
+	$rand = rand(1,10000000);
+	$imgName= $_FILES["file1"]["name"];
+	$imgType= $_FILES["file1"]["type"];
+	$tmpName= $_FILES["file1"]["tmp_name"];
+	$finalImgName = $rand."_".$imgName;
+
+	if($imgType=='image/jpeg' || $imgType=='image/jpg' || $imgType=='image/png' )
+	{
+		$r=move_uploaded_file($tmpName,"user_images/$finalImgName");
+
+		if($r)
+		{
+			$conn = mysqli_connect("localhost","sriarana_trapo","NSBMply20.1SE","sriarana_trapotour");
+			if ($conn->connect_error) {
+				die("Connection failed: " . $conn->connect_error);
+      }
+      $sql = "INSERT INTO tourists (image, firstName, lastName, username, password, gender, email, mobile, country) VALUES ('" . $finalImgName . "','" . $_POST["fname"] . "','" . $_POST["lname"] . "','" . $_POST["username"] . "','" . $_POST["password"] . "','" . $_POST["gender"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["country"] . "')";
+
+			if ($conn->query($sql) === TRUE) {
+				echo '<script>alert("New record created successfully")</script>';
+			} 
+			else {
+				echo '<script>alert("Username already use or Something went wrong")</script>';
+			}
+		}
+		else
+		{
+			echo '<script>alert("Image not uploaded successfully")</script>';
+		}
+	}
+	else
+	{
+		echo '<script>alert("Image format not support")</script>';
+	}
+
+
+	$conn->close();
+}
+?>
 </html>
