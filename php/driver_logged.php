@@ -23,7 +23,7 @@ $uname = $_SESSION["uname"];
 
     <div id="topDiv">
         <div id="logo" onmouseover="status()">
-            <a href="" target="_blank"><img src="images/logo.png" id="logo"></a>
+            <a href="http://www.trapotour.com/" target="_blank"><img src="images/logo.png" id="logo"></a>
         </div>
         <div id="user">
             <div id="username">

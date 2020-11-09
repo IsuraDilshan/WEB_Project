@@ -141,7 +141,7 @@ fieldset {
 </head>
 <body>
     <div class="container">  
-        <form id="contact" action="" method="post">
+        <form id="contact" action="" method="post" enctype="multipart/form-data">
           <h3 style="margin-bottom: 10px;">Sign Up</h3>
           <fieldset>
             <input name="fname" placeholder="First Name" type="text" tabindex="1" required autofocus>
@@ -173,9 +173,9 @@ fieldset {
           <label>Your Image</label>
           <input type="hidden" name="size" value="1000000">
   	    <div>
-  	        <input type="file" name="file1" tabindex="10">
+  	        <input type="file" name="file1" size="100" tabindex="10">
   	    </div>
-          
+
           <br>
 
           <fieldset>
