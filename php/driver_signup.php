@@ -219,6 +219,21 @@ if(count($_POST)>0) {
 			echo '<script>alert("Image not uploaded successfully")</script>';
 		}
 	}
+	else if($imgType=="")
+	{
+		$conn = mysqli_connect("localhost","sriarana_trapo","NSBMply20.1SE","sriarana_trapotour");
+			if ($conn->connect_error) {
+				die("Connection failed: " . $conn->connect_error);
+			}
+			$sql = "INSERT INTO drivers (image, firstName, lastName, username, password, gender, email, mobile, city) VALUES ('noImg.png','" . $_POST["fname"] . "','" . $_POST["lname"] . "','" . $_POST["username"] . "','" . $_POST["password"] . "','" . $_POST["gender"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["city"] . "')";
+		
+			if ($conn->query($sql) === TRUE) {
+				echo '<script>alert("New record created successfully")</script>';
+			} 
+			else {
+				echo '<script>alert("Username already use or Something went wrong")</script>';
+			}
+	}
 	else
 	{
 		echo '<script>alert("Image format not support")</script>';
