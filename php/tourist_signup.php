@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="icon" href="images/icon.ico">
+	<title>Sign Up</title>
+	<link rel="icon" href="images/icon.ico">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
@@ -141,7 +141,7 @@ fieldset {
 </head>
 <body>
     <div class="container">  
-        <form id="contact" action="" method="post">
+        <form id="contact" action="" method="post" enctype="multipart/form-data">
           <h3 style="margin-bottom: 10px;">Sign Up</h3>
           <fieldset>
             <input name="fname" placeholder="First Name" type="text" tabindex="1" required autofocus>
@@ -415,15 +415,15 @@ fieldset {
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
-
+          
           <br>
 
           <label>Your Image(Optional)</label>
           <input type="hidden" name="size" value="1000000">
   	    <div>
-  	        <input type="file" name="file1" tabindex="10">
+  	        <input type="file" name="file1" size="100" tabindex="10">
   	    </div>
-          
+
           <br>
 
           <fieldset>
@@ -452,9 +452,9 @@ if(count($_POST)>0) {
 			$conn = mysqli_connect("localhost","sriarana_trapo","NSBMply20.1SE","sriarana_trapotour");
 			if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
-      }
-      $sql = "INSERT INTO tourists (image, firstName, lastName, username, password, gender, email, mobile, country) VALUES ('" . $finalImgName . "','" . $_POST["fname"] . "','" . $_POST["lname"] . "','" . $_POST["username"] . "','" . $_POST["password"] . "','" . $_POST["gender"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["country"] . "')";
-
+			}
+			$sql = "INSERT INTO tourists (image, firstName, lastName, username, password, gender, email, mobile, country) VALUES ('" . $finalImgName . "','" . $_POST["fname"] . "','" . $_POST["lname"] . "','" . $_POST["username"] . "','" . $_POST["password"] . "','" . $_POST["gender"] . "','" . $_POST["email"] . "','" . $_POST["mobile"] . "','" . $_POST["country"] . "')";
+		
 			if ($conn->query($sql) === TRUE) {
 				echo '<script>alert("New record created successfully")</script>';
 			} 

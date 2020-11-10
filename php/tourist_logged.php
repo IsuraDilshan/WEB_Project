@@ -244,7 +244,6 @@ $uname = $_SESSION["uname"];
             b.style.display = "block";
             document.getElementById("b").style.backgroundColor="rgb(255, 255, 255)";
         }
-        
     </script>
 
 </body>
