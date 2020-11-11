@@ -23,15 +23,54 @@ $uname = $_SESSION["uname"];
 
     <div id="topDiv">
         <div id="logo" onmouseover="status()">
-            <a href="" target="_blank"><img src="images/logo.png" id="logo"></a>
+            <a href="http://www.trapotour.com/" target="_blank"><img src="images/logo.png" id="logo"></a>
         </div>
         <div id="user">
-            <div id="username">
-                Logged as: <?php echo $uname; ?>
-            </div>
-            <button id="logout" onclick="document.location='logout_user.php'">
-                LogOut
-            </button>
+            <table>
+                <tr>
+                    <td>
+                        <div id="username">
+                            Logged as: <?php echo $uname; ?>
+                        </div>
+                        <button id="logout" onclick="document.location='logout_user.php'">
+                            LogOut
+                        </button>
+                    </td>
+                    <td>
+
+                        <?php
+                        $servername = "localhost";
+                        $username = "sriarana_trapo";
+                        $password = "NSBMply20.1SE";
+                        $dbname = "sriarana_trapotour";
+                        // Create connection
+                        $conn = new mysqli($servername, $username, $password, $dbname);
+                        $sql = "SELECT * from tourists where username = '$uname'";
+                        if (mysqli_query($conn, $sql)) {
+                        echo "";
+                        } else {
+                        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                        }
+                        $count=1;
+                        $result = mysqli_query($conn, $sql);
+                        if (mysqli_num_rows($result) > 0) {
+                        // output data of each row
+                        while($row = mysqli_fetch_assoc($result)) { ?>
+                            
+                            <?php $img_src = $row['image']; ?>
+                            <img src="user_images/<?php echo $img_src; ?>" style="height: 70px; width: 70px; object-fit: cover; border-radius: 50%;">
+                
+                            <?php
+                        $count++;
+                        }
+                        } else {
+                        echo '0 results';
+                        }
+                        ?>
+
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
@@ -65,7 +104,9 @@ $uname = $_SESSION["uname"];
                 if (mysqli_num_rows($result) > 0) {
                 // output data of each row
                 while($row = mysqli_fetch_assoc($result)) { ?>
-                    <div class="card" style="width: 18rem; float: left;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 20px; margin-bottom: 20px;">
+                    <div class="card" style="width: 18rem; float: left;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 70px; margin-bottom: 20px;">
+                        <?php $img_src = $row['image']; ?>
+                        <img src="user_images/<?php echo $img_src; ?>" class="card-img-top" alt="Image of guide" style="height: 18rem; object-fit: cover;">
                         <div class="card-body">
                           <h5 class="card-title">Guide ID : <lable style="color:red;"><?php echo $row['guideID']; ?></lable></h5>
                           <h5 class="card-title"><?php echo $row['firstName']; ?> <?php echo $row['lastName']; ?></h5>
@@ -107,7 +148,9 @@ $uname = $_SESSION["uname"];
                 // output data of each row
                 while($row = mysqli_fetch_assoc($result)) { ?>
 
-                    <div class="card" style="width: 18rem; float: left;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 20px; margin-bottom: 20px;">
+                    <div class="card" style="width: 18rem; float: left;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 70px; margin-bottom: 20px;">
+                        <?php $img_src = $row['image']; ?>
+                        <img src="user_images/<?php echo $img_src; ?>" class="card-img-top" alt="Image of driver" style="height: 18rem; object-fit: cover;">
                         <div class="card-body">
                           <h5 class="card-title">Driver ID : <lable style="color:red;"><?php echo $row['driverID']; ?></lable></h5>
                           <h5 class="card-title"><?php echo $row['firstName']; ?> <?php echo $row['lastName']; ?></h5>
@@ -131,6 +174,37 @@ $uname = $_SESSION["uname"];
 
         <div id="bookings">
             <label style=" font-size: 30px; font-weight: 700;">NOT AVAILABLE YET</label>
+
+            <?php
+                $servername = "localhost";
+                $username = "sriarana_trapo";
+                $password = "NSBMply20.1SE";
+                $dbname = "sriarana_trapotour";
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * from tourists where username = '$uname'";
+                if (mysqli_query($conn, $sql)) {
+                echo "";
+                } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                $count=1;
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                // output data of each row
+                while($row = mysqli_fetch_assoc($result)) { ?>
+                    
+                   
+                    
+                    <?php
+            $count++;
+            }
+            } else {
+            echo '0 results';
+            }
+            ?>
+
+
         </div>
 
     </center>
@@ -170,7 +244,6 @@ $uname = $_SESSION["uname"];
             b.style.display = "block";
             document.getElementById("b").style.backgroundColor="rgb(255, 255, 255)";
         }
-        
     </script>
 
 </body>
