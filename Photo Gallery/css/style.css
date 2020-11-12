@@ -1,12 +1,31 @@
 body{
-    font-family: cursive; 
+    font-family: Arial, Helvetica, sans-serif; 
    /* background: #2f302fda; */ 
+}
+.header
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.video-background
+{
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1;
+     
 }
 .imgal{
     text-align: center;
     color: white;
     margin: 30px 10px 20px;
     text-shadow: 2px 2px 5px red;
+    font-size: 40px;
     /*border: 1px solid red;*/
 }
 .imgal-text
@@ -48,6 +67,7 @@ body{
 .left
 {
     float: left;
+    padding-left: 30px;
     
 }
 
@@ -56,6 +76,7 @@ body{
     float: right;
     padding-right: 30px;
     margin-top: 20px;
+    color: white;
 }
 .sizes
 {
