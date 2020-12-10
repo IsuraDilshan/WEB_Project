@@ -7,6 +7,6 @@ Group Members <br>
  &nbsp;&nbsp;&nbsp;<li> Isura Dilshan (Leader) </li>
 &nbsp;&nbsp;&nbsp;<li> Shamil Keheliya Muhandiram </li>
 &nbsp;&nbsp;&nbsp;<li> Wenupa Mandinu </li>
-&nbsp;&nbsp;&nbsp;<li> Thanushi Devindi </li>
+&nbsp;&nbsp;&nbsp;<li> Devindi Rajapakse </li>
 &nbsp;&nbsp;&nbsp;<li> Hashini Rashmika </li>
 </ul>
