@@ -1,6 +1,6 @@
 # WEB_Project
 
-This is our web group project for Web based application development module on first year(NSBM University).
+This is our web group project for Web based application development module on first year(NSBM Green University).
 Badge - 20.1 BSc(Honours)in Software Engineering (NSBM-PLY) <br><br>
 Group Members <br>
 <ul>
